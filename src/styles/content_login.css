@@ -6,14 +6,14 @@
     display:block;
     margin: 0 auto;
     width: 420px;
-    height: 424px;
+    height: 494px;
 }
 
 .container__title{
-    /* font-family: "Inter", sans-serif; */
+    font-family: "Inter", sans-serif;
     font-size: 34px;
     font-weight: 700;
-    margin: 120px 0 62px 0;
+    margin: 100px 0 52px 0;
     text-align: center;
 }
 .container__form{
@@ -24,4 +24,26 @@
 }
 .container__label, .container__input{
     display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #0000000f ;
+}
+.container__submit{
+    width: 100%;
+    height: 46px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-color: #000;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px ;
+}
+.container__link{
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 16px;
 }
