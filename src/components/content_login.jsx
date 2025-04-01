@@ -10,7 +10,7 @@ export const Content_Login = () => {
         <label htmlFor="password" className='container__label'>Contraseña</label>
         <input type="text" className='container__input' placeholder='Ingrese su contraseña' name='password' />
         <button type='submit' className='container__submit'>Ingresar</button>
-        <a href="#" className='container__link'>Olvide mi contraseña</a>
+        <a href="/forgot" className='container__link'>Olvide mi contraseña</a>
       </form>
     </main>
   )
