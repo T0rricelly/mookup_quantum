@@ -1,7 +1,10 @@
 import './../styles/forgot_pasword.css'
+import Header from './Header_Login';
+import Footer from './Footer';
 export const Restore = () => {
     return (
         <>
+            <Header />
             <h2 className="main__title">Restablecer contraseña</h2>
             <main className="main">
                 <form action="post" className="main__form">
@@ -14,6 +17,8 @@ export const Restore = () => {
                 <a href="/forgot" className="main__btnCancel">Cancelar</a>
                 <a href="/new" className="main__btnNext">Siguiente</a>
             </main>
+            <Footer />
         </>
     )
 }
+export default Restore
