@@ -8,7 +8,7 @@ import { BrowserRouter, Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Forgot_Pasword } from './components_login/Forgot_Pasword';
 import { Restore } from './components_login/Restore';
-import  Inicio from './components_login/Home';
+import  Inicio from './components_home/Home';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

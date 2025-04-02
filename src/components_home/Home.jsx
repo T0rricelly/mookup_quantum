@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from './Header_Login'
+import { Header } from './Header_home.jsx'
 
 export const Inicio = () => {
     return (
