@@ -1,0 +1,47 @@
+.main{
+    width: 50%;
+    margin: 110px auto 210px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main__title{
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 150px 0 0 0;
+    text-align: center;
+}
+.main__label{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 25px 10px 5px;
+    border-radius: 8px;
+    border-color: #0000000f ;
+}
+.main__input{
+    display: block;
+    width: 90%;
+    margin: 0 auto ;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #0000000f ;
+}
+.main__btnCancel, .main__btnNext{
+    display: inline-block;
+    width: 45%;
+    height: 42px;
+    margin: 15px 2.5% 30px;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 8px 10px ;
+    text-decoration: none;
+    text-align: center;
+}
+.main__indications{
+    width: 90%;
+    margin: 30px auto 0;
+    font-size: 13px;
+}
