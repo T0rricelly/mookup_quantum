@@ -1,16 +1,13 @@
-import React from 'react'
-import { Header } from './Header_home.jsx'
+import Menu from "./menu.jsx";
+import Header from "./Header_home.jsx";
 
 export const Home = () => {
-    return (
-        <>
-            <Header />
-            <main className='container'>
-                <h2 className='container__title'>Bienvenido a Quantum</h2>
-                <p className='container__text'>Esta es la pagina de inicio de Quantum, donde puedes encontrar toda la informacion sobre nuestros servicios y productos.</p>
-                <p className='container__text'>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
-            </main>
-        </>
-    )
-}
-export default Home
+  return (
+    <>
+      <Header />
+
+      <Menu />
+    </>
+  );
+};
+export default Home;
