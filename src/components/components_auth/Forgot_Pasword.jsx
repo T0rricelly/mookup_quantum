@@ -1,6 +1,6 @@
-import '../styles/forgot_pasword.css'
-import Header from './Header_Login';
-import Footer from './Footer';
+import './../../styles/styles_auth/forgot_pasword.css';
+import Header from './Header_Auth';
+import Footer from './footer';
 
 export const Forgot_Pasword = () => {
   return (

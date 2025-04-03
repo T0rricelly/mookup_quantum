@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './Header_home.jsx'
 
-export const Inicio = () => {
+export const Home = () => {
     return (
         <>
             <Header />
@@ -13,4 +13,4 @@ export const Inicio = () => {
         </>
     )
 }
-export default Inicio
+export default Home

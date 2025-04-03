@@ -1,5 +1,5 @@
-import quantumLogo from './../assets/images/quantum_logo.png';
-import './../styles/header.css';
+import quantumLogo from './../../assets/images/quantum_logo.png';
+import './../../styles/styles_auth/header_auth.css';
 export const Header = () => {
   return (
     <header className='header'>

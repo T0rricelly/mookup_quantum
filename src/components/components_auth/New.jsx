@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from './Header_Login'
-import Footer from './Footer'
-
+import Header from './Header_Auth'
+import Footer from './footer'
 export const New = () => {
   return (
     <>

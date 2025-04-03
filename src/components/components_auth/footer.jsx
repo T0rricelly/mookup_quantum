@@ -1,10 +1,10 @@
 import React from 'react'
-import './../styles/footer.css'
-import quantumLogo from './../assets/images/quantum_logo.png'
-import instagramLogo from './../assets/icons/instagram_logo.svg'
-import facebookLogo from './../assets/icons/facebook_logo.svg'
-import xLogo from './../assets/icons/x_logo.svg'
-import ytLogo from './../assets/icons/yt_logo.svg'
+import './../../styles/styles_auth/footer.css'
+import quantumLogo from './../../assets/images/quantum_logo.png'
+import instagramLogo from './../../assets/icons/instagram_logo.svg'
+import facebookLogo from './../../assets/icons/facebook_logo.svg'
+import xLogo from './../../assets/icons/x_logo.svg'
+import ytLogo from './../../assets/icons/yt_logo.svg'
 
 export const Footer = () => {
     return (
