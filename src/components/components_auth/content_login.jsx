@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const Content_Login = () => {
   const showToast = () => {
-    toast.error('Por llena todos los campos sugeridos', {
+    toast.error('Por favor llena todos los campos sugeridos', {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
