@@ -1,0 +1,32 @@
+.menu{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    
+    justify-content: center; 
+    padding: 1.5rem;
+    border-right: solid 1px;
+    width: max-content;
+}
+.titulo_menu{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    font-size:20px; 
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+}
+.text_menu{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+.text_menu:hover{
+   
+    text-underline-position:below;
+    cursor: pointer;
+}
