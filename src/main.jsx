@@ -7,6 +7,8 @@ import { Route } from 'react-router-dom';
 import { Forgot_Pasword } from './components/components_auth/Forgot_Pasword';
 import { Restore } from './components/components_auth/Restore';
 import  Home from './components/components_home/Home';
+import Calendar from './components/components_calendar/calendar';
+import Calendarp from './components/components_calendar/Calendarp';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/restore" element={<Restore/>} />
         <Route path="/new" element={<New/>} />
         <Route path="/" element={<Home/>} />
+        <Route path="/assistance" element={<Calendarp/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>
