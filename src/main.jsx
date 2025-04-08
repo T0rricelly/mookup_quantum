@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/forgot" element={<Forgot_Pasword/>} />
         <Route path="/restore" element={<Restore/>} />
         <Route path="/new" element={<New/>} />
-        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
