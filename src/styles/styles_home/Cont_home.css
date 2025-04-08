@@ -1,0 +1,15 @@
+.contenedor{
+    display: flex;
+    padding: 20px 0px;
+}
+section{
+    padding: 50px 20px;
+    width: 100%;
+}
+.titulo_ini{
+    font-size: 30px;
+}
+.tiempo{
+    display: flex;
+
+}
