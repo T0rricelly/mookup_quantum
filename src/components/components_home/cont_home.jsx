@@ -11,10 +11,10 @@ export const Cont_home = () => {
       <nav className="tiempo">
         <h1 className="titulo_ini">INICIO</h1>
 
-        <h4 id="hora">{interval}00:00:00</h4>
+        <h4 id="hora">{interval}</h4>
       </nav>
       <article className="saludo">
-        <p>Hola </p>
+        <p>iuouiooiu</p>
       </article>
       <nav></nav>
     </>
