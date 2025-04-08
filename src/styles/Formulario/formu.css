@@ -1,0 +1,63 @@
+
+.container_11 {
+
+    width: 50%;
+    margin: auto;
+    height: 500px;
+
+}
+
+.section_12 {
+
+    float: right;
+    height: 800px;
+    width:70%;
+    
+}
+
+.nav_11 {
+
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.formulario {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.article_111 {
+
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+
+input {
+
+    width: 90%;
+    height: 30px;
+
+}
+
+.Actu_datos{
+
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    text-decoration: underline;
+
+}
+
+.main_title1 {
+
+    margin-top: 1rem;
+
+}

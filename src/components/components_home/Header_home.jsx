@@ -14,7 +14,8 @@ export const Header = () => {
       {/* </div> */}
       <div className='buttons'>
         <button className='btn_cuenta'>Cuenta</button>
-        <a className='btn_logout' href='/login'>Log out</a>
+        <a href="/cuenta"> cuenta </a>
+        <a className='btn_logout' href='/login'>Log o</a>
       </div>
     </header>
   )
