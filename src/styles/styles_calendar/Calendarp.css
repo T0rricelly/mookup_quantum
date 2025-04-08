@@ -1,0 +1,34 @@
+.menandcal{
+    display: flex;
+}
+.Calendarioo{
+    margin-left: -130px;
+    margin-top: 90px;
+    /* font-size: 30px; */
+    width: 800px;
+    height: 450px;
+}
+
+.react-calendar__tile {
+    font-size: 20px;
+}
+ .react-calendar__month-view__days__day { /*dias del mes */
+    font-size: 22px;
+    color: #222;
+    font-weight: normal;
+}
+
+.react-calendar__navigation button { /*mes de la parte de arriba */
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Asistencia_text{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    font-size: 25px;
+    margin-top: -530px;
+    margin-left: 100px;
+}
