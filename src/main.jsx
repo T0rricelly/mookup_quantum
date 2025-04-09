@@ -8,7 +8,7 @@ import { Forgot_Pasword } from './components/components_auth/Forgot_Pasword';
 import { Restore } from './components/components_auth/Restore';
 import  Home from './components/components_home/Home';
 import Calendarp from './components/components_calendar/Calendarp';
-import { Formulario } from './components/components_home/formulario';
+import { Formulario } from './components/components_home/Formulario';
 import Cont_permisos from './components/components_permisos/cont_permisos';
 import Employe from './components/Components_employe/Employe';
 import Table_Employe from './components/components_home/table_employe';
