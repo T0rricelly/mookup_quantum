@@ -33,6 +33,8 @@
 }
 
 .btn_cuenta {
+    text-decoration: none;
+    color: black;
     border: none;
     border-radius: 1em;
     padding: 10px 25px 10px 25px;

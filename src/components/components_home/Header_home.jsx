@@ -9,7 +9,8 @@ export const Header = () => {
           Rol:
         </p>
       <div className='buttons'>
-        <button className='btn_cuenta'>Cuenta</button>
+        <a className='btn_cuenta' href='/cuenta'>Cuenta</a>
+        
         <a className='btn_logout' href='/login'>Log out</a>
       </div>
     </header>
