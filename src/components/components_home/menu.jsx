@@ -33,7 +33,7 @@ export const Menu = () => {
       </li>
       <li className='text_menu'>
         <img src={Contra} alt="Hoja" />
-        <a href="/contrato">
+        <a href="/contrat">
           <span>CONTRATO</span>
         </a>
 
