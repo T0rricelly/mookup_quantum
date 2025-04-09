@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header_Auth'
+import HeaderAuth from './Header_Auth'
 import Footer from './footer'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -51,7 +51,7 @@ export const New = () => {
   }
   return (
     <>
-      <Header />
+      <HeaderAuth />
       <main className='container'>
         <h2 className='container__title'>Nueva Contraseña</h2>
         <form action="POST" className='container__form'>
