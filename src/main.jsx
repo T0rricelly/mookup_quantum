@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom';
 import { Forgot_Pasword } from './components/components_auth/Forgot_Pasword';
 import { Restore } from './components/components_auth/Restore';
 import  Home from './components/components_home/Home';
+import { Formulario } from './components/components_home/formulario';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/forgot" element={<Forgot_Pasword/>} />
         <Route path="/restore" element={<Restore/>} />
         <Route path="/new" element={<New/>} />
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
