@@ -1,5 +1,5 @@
 import './../../styles/styles_auth/forgot_pasword.css';
-import Header from './Header_Auth';
+import HeaderAuth from './Header_Auth';
 import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -36,7 +36,7 @@ export const Forgot_Pasword = () => {
   }
   return (
     <>
-      <Header/>
+      <HeaderAuth/>
       <h2 className="main__title">Restablecer contraseña</h2>
       <main className="main">
         <form action="" className="main__form">

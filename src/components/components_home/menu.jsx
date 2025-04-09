@@ -26,7 +26,7 @@ export const Menu = () => {
       </li>
       <li className='text_menu'>
         <img src={Cal} alt="Calendario" />
-        <a href="/asistencia">
+        <a href="/assistance">
           <span>ASISTENCIA</span>
         </a>
 

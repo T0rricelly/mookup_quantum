@@ -1,5 +1,5 @@
 import './../../styles/styles_auth/content_login.css';
-import Header from './Header_Auth';
+import HeaderAuth from './Header_Auth';
 import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -62,7 +62,7 @@ export const Content_Login = () => {
 
   return (
     <>
-      <Header />
+      <HeaderAuth />
       <main className='container'>
         <h2 className='container__title'>Login</h2>
         <form action="" className='container__form' onSubmit={submit} >

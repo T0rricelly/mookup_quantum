@@ -1,4 +1,4 @@
-import Header from './Header_Auth';
+import HeaderAuth from './Header_Auth';
 import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -23,7 +23,7 @@ export const Restore = () => {
         }
     }
     const cancel = () => {
-        window.location.href = '/restore';
+        window.location.href = '/forgot';
     }
     const error = () => {
         toast.error('Por favor llena los campos vacios', {
@@ -51,7 +51,7 @@ export const Restore = () => {
     }
     return (
         <>
-            <Header />
+            <HeaderAuth />
             <h2 className="main__title">Restablecer contraseña</h2>
             <main className="main">
                 <form action="post" className="main__form">

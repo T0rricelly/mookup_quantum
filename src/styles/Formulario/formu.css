@@ -2,14 +2,14 @@
 .container_11 {
 
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     height: 500px;
 
 }
 
 .section_12 {
-
-    float: right;
+    display: flex;
+    /* float: right; */
     margin-right: 20rem;
     height: 900px;
     width:70%;
@@ -18,7 +18,7 @@
 
 .nav_11 {
 
-    display: flex;
+    /* display: flex; */
     width: 60%;
     margin: auto;
     justify-content: space-between;
@@ -27,6 +27,7 @@
 .formulario {
 
     display: grid;
+    width: 70vw;
     grid-template-columns: 50% 50%;
 
 }
@@ -46,7 +47,6 @@
     border: none;
     width: 90%;
     height: 30px;
-
 }
 
 .Actu_datos{

@@ -1,6 +1,12 @@
 .cont_permisos{
     padding: 10px;
 }
+.contenedor{
+  padding-top: 50px;
+}
+.CONTENIDO{
+    margin-bottom: 250px;
+}
 .tiempo{
     display: flex; 
     padding: 1rem;
