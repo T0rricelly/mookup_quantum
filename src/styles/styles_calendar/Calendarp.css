@@ -4,7 +4,7 @@
 .Calendarioo{
     margin-left: -130px;
     margin-top: 90px;
-    width: 500px;
+    width: 550px;
     height: 350px;
 }
 .react-calendar__navigation button { /*mes de la parte de arriba */
@@ -34,7 +34,7 @@
     text-align: center;
     display: grid;
     font-size: 25px;
-    margin-top: -530px;
+    margin-top: -400px;
     margin-left: 100px;
 }
 .Reporte_buttom{
@@ -43,13 +43,32 @@
     margin-top: 25px;
     background-color: #c5c5c5;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 .Reporte_buttom:hover{
     background-color: #d6d6d6;
 }
+.Report_box{
+    text-align: center;
+    margin-top: 120px;
+    margin-left: -265px;
+    background-color: #c5c5c5;
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+}
+.Report_text{
+    margin-top: 40px;
+    color: #000000;
 
+}
+.hora_inp{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
 
 
 

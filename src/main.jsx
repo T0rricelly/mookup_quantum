@@ -19,6 +19,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/restore" element={<Restore/>} />
         <Route path="/new" element={<New/>} />
         <Route path="/" element={<Home/>} />
+
+
+        <Route path="/assistance" element={<Calendarp/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
