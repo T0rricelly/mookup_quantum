@@ -10,6 +10,7 @@ import  Home from './components/components_home/Home';
 import Calendarp from './components/components_calendar/Calendarp';
 import { Formulario } from './components/components_home/formulario';
 import Cont_permisos from './components/components_permisos/cont_permisos';
+import Employe from './components/Components_employe/Employe';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/home" element={<Home/>} />
         <Route path="/permisos" element={<Cont_permisos/>} />
         <Route path="/assistance" element={<Calendarp/>} />
+        <Route path="/employe" element={<Employe/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

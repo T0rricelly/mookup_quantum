@@ -40,7 +40,7 @@ export const Menu = () => {
       </li>
       <li className='text_menu'>
         <img src={Emp} alt="Empleado" />
-        <a href="/empleados">
+        <a href="/employe">
           <span>EMPLEADOS</span>
         </a>
       </li>
