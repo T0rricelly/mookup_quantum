@@ -10,7 +10,8 @@
 .section_12 {
 
     float: right;
-    height: 800px;
+    margin-right: 20rem;
+    height: 900px;
     width:70%;
     
 }
@@ -40,7 +41,7 @@
 }
 
 
-input {
+.input_1111 {
     background-color: #c1c1c1;
     border: none;
     width: 90%;
@@ -62,3 +63,10 @@ input {
     margin-top: 1rem;
 
 }
+
+.SUB1{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
