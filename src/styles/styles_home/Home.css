@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    padding: 20px 0px;
+}
+.MENU{
+    width: 15%;
+}
+.CONTENIDO{
+    width: 82%;
+}

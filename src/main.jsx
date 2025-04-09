@@ -8,7 +8,7 @@ import { Forgot_Pasword } from './components/components_auth/Forgot_Pasword';
 import { Restore } from './components/components_auth/Restore';
 import  Home from './components/components_home/Home';
 import Calendarp from './components/components_calendar/Calendarp';
-
+import { Formulario } from './components/components_home/formulario';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
