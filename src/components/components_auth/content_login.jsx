@@ -20,8 +20,6 @@ export const Content_Login = () => {
       setPassword(e.target.value);
     }
 
-
-
   const submit = (e) => {
 
     e.preventDefault(e);

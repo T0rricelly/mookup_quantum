@@ -1,5 +1,6 @@
 import "../../styles/styles_home/Cont_home.css";
 import { useState, useEffect } from "react";
+const name = 'Santiago'
 export const Cont_home = () => {
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
 
@@ -22,7 +23,7 @@ export const Cont_home = () => {
 
         </nav>
         <article className="saludo">
-          <p>Hola</p>
+          <p>Hola {name}</p>
         </article>
         <section className="tabla_container">
           <table className="tabla">

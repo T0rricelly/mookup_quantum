@@ -104,7 +104,7 @@ export const Cont_permisos = () => {
             <h2 className="modal_titulo">NUEVO PERMISO</h2>
             <div className="modal_grid">
               <div className="campo">
-                <label>TIPO DE CONTRATO</label>
+                <label>TIPO DE PERMISO</label>
                 <input type="text" placeholder="Ej. Vacaciones" />
               </div>
 
