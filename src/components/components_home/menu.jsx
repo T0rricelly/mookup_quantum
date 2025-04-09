@@ -5,36 +5,48 @@ import Cal from '../../assets/icons/calendar.svg'
 import Contra from '../../assets/icons/sign.svg'
 import Emp from '../../assets/icons/employe.svg'
 import '../../styles/styles_home/Menu.css'
-  export const Menu = () => {
-    return (
-      <ul className='menu'>
-        <li className='titulo_menu'>
-          <img src={Barras} alt="Barras_menu" />
-          <span>MENU</span>
-        </li>
-        <li className='text_menu'>
-          <img src={Casa} alt="Casa" />
-          <span>INICIO</span>
-        </li>
-        <li className='text_menu'>
-          <img src={Check} alt="Check" />
+export const Menu = () => {
+  return (
+    <ul className='menu'>
+      <li className='titulo_menu'>
+        <img src={Barras} alt="Barras_menu" />
+        <span>MENU</span>
+      </li>
+      <li className='text_menu'>
+        <img src={Casa} alt="Casa" />
+        <a href="/home">
+        <span>INICIO</span>
+        </a>
+      </li>
+      <li className='text_menu'>
+        <img src={Check} alt="Check" />
+        <a href="/permisos">
           <span>PERMISOS</span>
-        </li>
-        <li className='text_menu'>
-          <img src={Cal} alt="Calendario" />
+        </a>
+      </li>
+      <li className='text_menu'>
+        <img src={Cal} alt="Calendario" />
+        <a href="/asistencia">
           <span>ASISTENCIA</span>
-        </li>
-        <li className='text_menu'>
-          <img src={Contra} alt="Hoja" />
+        </a>
+
+      </li>
+      <li className='text_menu'>
+        <img src={Contra} alt="Hoja" />
+        <a href="/contrato">
           <span>CONTRATO</span>
-        </li>
-        <li className='text_menu'>
-          <img src={Emp} alt="Empleado" />
+        </a>
+
+      </li>
+      <li className='text_menu'>
+        <img src={Emp} alt="Empleado" />
+        <a href="/empleados">
           <span>EMPLEADOS</span>
-        </li>
-      </ul>
-    );
-  }
-  
+        </a>
+      </li>
+    </ul>
+  );
+}
+
 
 export default Menu

@@ -2,12 +2,14 @@
     display: flex;
     gap: 3rem;
     flex-direction: column;
-   text-align: center;
-   align-items: center;
+ 
     padding: 1.5rem;
-    width: max-content;
+    width: 100%;
     border-right: solid 1px;
 
+}
+img {
+  margin-right: 20px;
 }
 .titulo_menu{
     align-items: center;
@@ -29,7 +31,9 @@
     cursor: pointer;
     border-radius: 8px;
   }
-  
+  a{
+    color: black;
+  }
   /* Responsivo: solo íconos en pantallas pequeñas */
   @media (max-width: 760px) {
     .menu {
