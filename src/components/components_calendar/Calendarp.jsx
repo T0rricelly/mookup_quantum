@@ -16,6 +16,7 @@ export const Calendarp = () => {
                 <Menu />
                 <h1 className="Asistencia_text">ASISTENCIA</h1>
                 <Calendar className="Calendarioo"/>
+                <h1 className="Reporte_buttom">REPORTE</h1>
             </section>
             <Footer/>
         </>

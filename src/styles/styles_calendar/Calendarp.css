@@ -4,26 +4,31 @@
 .Calendarioo{
     margin-left: -130px;
     margin-top: 90px;
-    /* font-size: 30px; */
-    width: 800px;
-    height: 450px;
+    width: 500px;
+    height: 350px;
 }
-
-.react-calendar__tile {
-    font-size: 20px;
-}
- .react-calendar__month-view__days__day { /*dias del mes */
-    font-size: 22px;
-    color: #222;
-    font-weight: normal;
-}
-
 .react-calendar__navigation button { /*mes de la parte de arriba */
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
+    font-size: 25px;
 }
-
+.react-calendar__month-view__weekdays{/*dias en la parte de arriba */
+    font-size: 20px;
+}
+.react-calendar__month-view__days__day { /*dias del mes */
+    font-size: 25px;   
+    color: #222;    
+}
+.react-calendar__tile--now {
+    background-color: #c5c5c5;
+}
+.react-calendar__tile--active {
+    background-color: #939393 !important;
+}
+.react-calendar__tile--now:hover {
+    background-color: #c5c5c5 !important;
+}
+.react-calendar__tile--active:hover {
+    background-color: #939393 !important;
+}
 .Asistencia_text{
     align-items: center;
     text-align: center;
@@ -32,3 +37,23 @@
     margin-top: -530px;
     margin-left: 100px;
 }
+.Reporte_buttom{
+    height: fit-content;
+    margin-left: 400px;
+    margin-top: 25px;
+    background-color: #c5c5c5;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.Reporte_buttom:hover{
+    background-color: #d6d6d6;
+}
+
+
+
+
+
+
+
+
