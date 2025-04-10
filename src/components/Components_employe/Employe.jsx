@@ -19,11 +19,9 @@ const Employe = () => {
                     <section className="cont_permisos">
                         <nav className="tiempo">
                             <h1 className="titulo_ini">Empleados</h1>
-                            <article>
-                                <button className="buscar">
-                                    Buscar
-                                    <img className='lupa' src={search} alt="" />
-                                </button>
+                            <article className='buscar_container'>
+                                <input type="text" placeholder='buscar' className='buscar' />
+                                <img className='lupa' src={search} alt="" />
                             </article>
                         </nav>
 

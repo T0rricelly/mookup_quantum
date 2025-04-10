@@ -1,16 +1,21 @@
 .lupa {
     width: 40px;
     height: 40px;
-    
 }
 .buscar {
-    width: 250px;
+    background-color: #f1f1f1;
+    width: 200px;
     height: 60px;
     padding: 20px;
     font-size: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px 0 0 10px;
+}
+.buscar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px; 
 }
