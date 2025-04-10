@@ -20,7 +20,7 @@ const Employe = () => {
                         <nav className="tiempo">
                             <h1 className="titulo_ini">Empleados</h1>
                             <article>
-                                <button className="btn_nuevo">
+                                <button className="buscar">
                                     Buscar
                                     <img className='lupa' src={search} alt="" />
                                 </button>
