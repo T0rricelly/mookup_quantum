@@ -35,3 +35,29 @@
     text-decoration: none;
     margin: 30px 20px ;
 }
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .footer__img {
+        width: 200px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    .footer__info {
+        line-height: 30px;
+        font-size: 1rem;
+    }
+    .footer__link {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+    .footer__title {
+        font-size: 1rem;
+    }
+    
+}
