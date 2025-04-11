@@ -2,6 +2,13 @@ import quantumLogo from './../../assets/images/quantum_logo.png';
 import './../../styles/styles_home/header_home.css';
 export const Header = () => {
   const user = "Jefe de Personal"
+  const account = () => {
+    window.location.href = '/cuenta';
+  }
+  const logOut = () => {
+    window.location.href = '/login';
+    localStorage.removeItem('logged'); 
+  }
   return (
     <header className='header_home'>
       
@@ -10,9 +17,9 @@ export const Header = () => {
           Rol: {user}
         </p>
       <div className='buttons'>
-        <a className='btn_cuenta' href='/cuenta'>Cuenta</a>
+        <button  className='btn_cuenta' onClick={account}>Cuenta</button>
         
-        <a className='btn_logout' href='/login'>Log out</a>
+        <button className='btn_logout' onClick={logOut}>Log out</button>
       </div>
     </header>
   )

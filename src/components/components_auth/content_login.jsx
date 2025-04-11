@@ -13,15 +13,15 @@ export const Content_Login = () => {
   const [idCard, setidCard] = useState('');
   const [password, setPassword] = useState('');
 
-    const handleIdCard = (e) => {
-      setidCard(e.target.value);
-    }
-    const handlePassword = (e) => {
-      setPassword(e.target.value);
-    }
+  const handleIdCard = (e) => {
+    setidCard(e.target.value);
+  }
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  }
 
   const submit = (e) => {
-
+    localStorage.setItem('logged', 'true');
     e.preventDefault(e);
     if (idCard === idCardTest && password === passwordTest) {
       window.location.href = '/home';
@@ -31,7 +31,7 @@ export const Content_Login = () => {
       errorData();
     }
 
-    
+
   }
   const emptyCamps = () => {
     toast.error('Por favor llena todos los campos vacios', {
