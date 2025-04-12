@@ -3,9 +3,9 @@ import Header from '../components_home/Header_home'
 import Footer from '../components_auth/footer'
 import Menu from '../components_home/menu'
 import search from './../../assets/icons/lupa.svg'
-import './../../styles/styles_employe/Employe.css'
+import './../../styles/styles_employe/employe.css'
 
-const Employe = () => {
+const Employe = () => { 
     return (
         <>
             <Header />

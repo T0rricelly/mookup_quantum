@@ -34,7 +34,7 @@ export const Cont_home = () => {
                 <th>Fecha Fin</th>
                 <th>Area</th>
                 <th>Estado</th>
-                <th>Num.Doc</th>
+                <th>Num Doc</th>
               </tr>
             </thead>
 
