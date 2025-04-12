@@ -3,6 +3,7 @@ import Header from "./Header_home.jsx";
 import Footer from "../components_auth/footer.jsx";
 import Cont_home from "./cont_home.jsx";
 import '../../styles/styles_home/Home.css';
+import { BrowserRouter } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -12,12 +13,14 @@ export const Home = () => {
         <aside className="MENU">
           <Menu />
         </aside>
-        <section className="CONTENIDO">
-         <Cont_home/>
-
+        <main className="CONTENIDO">
+        <BrowserRouter>
           
-        </section>
-      </div>
+        </BrowserRouter>
+        
+        
+        </main>
+        </div>
       <Footer />
     </>
   );
