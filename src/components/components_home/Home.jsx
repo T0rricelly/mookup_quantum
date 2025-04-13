@@ -14,9 +14,6 @@ export const Home = () => {
           <Menu />
         </aside>
         <main className="CONTENIDO">
-        <BrowserRouter>
-          
-        </BrowserRouter>
         
         
         </main>
