@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderHome from "./Header_home";
-import Footer from "../components_auth/footer";
-import "./../../styles/styles_home/table_employe.css";
-import Menu from "./menu";
+import HeaderHome from "../components_home/Header_home.jsx";
+import Footer from "../components_auth/footer.jsx";
+import "../../styles/styles_employe/employe.css";
+import Menu from "../components_home/menu.jsx";
 
 const Table_Employe = () => {
   return (

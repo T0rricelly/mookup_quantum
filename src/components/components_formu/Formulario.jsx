@@ -1,8 +1,8 @@
-import Header from './Header_home';
-import Footer from '../components_auth/footer';
+import Header from '../components_home/Header_home.jsx';
+import Footer from '../components_auth/footer.jsx';
 import './../../styles/Formulario/formu.css'
 import { useForm } from 'react-hook-form';
-import Menu from './menu';
+import Menu from '../components_home/menu.jsx';
 
 export const Formulario = () => {
 
