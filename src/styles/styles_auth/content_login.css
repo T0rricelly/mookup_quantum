@@ -28,7 +28,6 @@
     padding: 10px;
     border-radius: 8px;
     border-color: #0000000f ;
-    transition: .3s ease all;
 }
 .container__input--pass{
     padding-right: 40px;
@@ -63,8 +62,10 @@
     z-index: 100;
     top: 5px;
     right: -12px;
-
-}    
+}   
+.container__svg:hover{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1000px) {
     .container{
