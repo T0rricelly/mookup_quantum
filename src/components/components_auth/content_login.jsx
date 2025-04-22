@@ -76,13 +76,25 @@ export const Content_Login = () => {
             onChange={handleIdCard}
             required />
           <label htmlFor="password" className='container__label'>Contraseña</label>
-          <input
-            type="password"
-            className='container__input'
-            placeholder='Ingrese su contraseña'
-            name='password'
-            onChange={handlePassword}
-            required />
+          <div className="container__group">
+            <input
+              type={showPass ? "text" : "password"}
+              className='container__input container__input--pass'
+              placeholder='Ingrese su contraseña'
+              name='password'
+              onChange={handlePassword}
+              required />
+            {showPass ?
+              <img src={Show} className="container__svg"
+                onClick={() => {
+                  setShowPass(!showPass)
+                }} /> :
+              <img src={Hidden} className="container__svg"
+                onClick={() => {
+                  setShowPass(!showPass)
+                }} />}
+
+          </div>
           <button
             type='submit'
             onClick={submit}
