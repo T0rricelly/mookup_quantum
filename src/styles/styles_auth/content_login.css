@@ -51,20 +51,6 @@
     padding-bottom: 10px;
     font-size: 16px;
 }
-.container__group{
-    position: relative;
-    z-index: 90;
-}
-
-.container__svg{
-    position: absolute;
-    width: 30px;
-    height: 35px;
-    z-index: 100;
-    top: 5px;
-    right: -12px;
-
-}    
 
 @media screen and (max-width: 1000px) {
     .container{

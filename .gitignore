@@ -13,17 +13,8 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.idx/
-.idx/**
-.firebase/
-.firebase/**
-.vscode/
-.vscode/**
+.vscode/*
 !.vscode/extensions.json
-firebase.json
-.firebaserc
-
-# IDE and OS files
 .idea
 .DS_Store
 *.suo
