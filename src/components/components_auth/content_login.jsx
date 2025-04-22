@@ -4,6 +4,8 @@ import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
+import Hidden from './../../assets/icons/hidden.svg'
+import Show from './../../assets/icons/show.svg'
 
 const idCardTest = '1031650532';
 const passwordTest = '1234567890';
@@ -12,6 +14,7 @@ export const Content_Login = () => {
 
   const [idCard, setidCard] = useState('');
   const [password, setPassword] = useState('');
+  const [showPass, setShowPass] = useState(false)
 
   const handleIdCard = (e) => {
     setidCard(e.target.value);
@@ -73,13 +76,25 @@ export const Content_Login = () => {
             onChange={handleIdCard}
             required />
           <label htmlFor="password" className='container__label'>Contraseña</label>
-          <input
-            type="password"
-            className='container__input'
-            placeholder='Ingrese su contraseña'
-            name='password'
-            onChange={handlePassword}
-            required />
+          <div className="container__group">
+            <input
+              type={showPass ? "text" : "password"}
+              className='container__input container__input--pass'
+              placeholder='Ingrese su contraseña'
+              name='password'
+              onChange={handlePassword}
+              required />
+            {showPass ?
+              <img src={Show} className="container__svg"
+                onClick={() => {
+                  setShowPass(!showPass)
+                }} /> :
+              <img src={Hidden} className="container__svg"
+                onClick={() => {
+                  setShowPass(!showPass)
+                }} />}
+
+          </div>
           <button
             type='submit'
             onClick={submit}
