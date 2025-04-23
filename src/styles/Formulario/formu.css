@@ -10,8 +10,8 @@
 .section_12 {
     display: flex;
     /* float: right; */
-    margin-right: 20rem;
-    height: 900px;
+    margin-left: -90px;
+    height: 650px;
     width:70%;
     
 }
@@ -27,7 +27,7 @@
 .formulario {
 
     display: grid;
-    width: 70vw;
+    width: 60vw;
     grid-template-columns: 50% 50%;
 
 }

@@ -11,93 +11,81 @@ export const Cont_permisos = () => {
 
   return (
     <>
-      <Header />
-      <div className="contenedor">
-        <aside className="MENU">
-          <Menu />
-        </aside>
-        <div className="CONTENIDO">
+      <section className="cont_permisos">
+        <nav className="tiempo">
+          <h1 className="titulo_ini">Permisos</h1>
+          <article>
+            <button className="btn_nuevo" onClick={abrirModal}>
+              NUEVO+
+            </button>
+          </article>
+        </nav>
+        <section className="tabla_container">
+          <table className="tabla">
+            <thead>
+              <tr>
+                <th>Tipo de Permiso</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha Fin</th>
+                <th>Dias</th>
+                <th>Comprobante</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
 
-          <section className="cont_permisos">
-            <nav className="tiempo">
-              <h1 className="titulo_ini">Permisos</h1>
-              <article>
-                <button className="btn_nuevo" onClick={abrirModal}>
-                  NUEVO+
-                </button>
-              </article>
-            </nav>
-
-            <section className="tabla_container">
-              <table className="tabla">
-                <thead>
-                  <tr>
-                    <th>Tipo de Permiso</th>
-                    <th>Fecha de Inicio</th>
-                    <th>Fecha Fin</th>
-                    <th>Dias</th>
-                    <th>Comprobante</th>
-                    <th>Estado</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td> empleado</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Vacaciones</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Vacaciones</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Vacaciones</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Vacaciones</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Vacaciones</td>
-                    <td>10/04/2025</td>
-                    <td>10/10/2026</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-          </section>
-        </div>
-      </div>
-      <Footer />
-
+            <tbody>
+              <tr>
+                <td> empleado</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vacaciones</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vacaciones</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vacaciones</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vacaciones</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vacaciones</td>
+                <td>10/04/2025</td>
+                <td>10/10/2026</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
       {mostrarModal && (
         <div className="modal_fondo">
           <div className="modal_formulario">

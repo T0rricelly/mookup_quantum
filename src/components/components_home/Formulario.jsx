@@ -14,11 +14,9 @@ export const Formulario = () => {
 
     return (
         <>
-            <Header />
+          
             <section className='section_12'>
-                <aside className='MENU'>
-                    <Menu />
-                </aside>
+                
 
                 <section className="container_11">
                     <h1 className='SUB1'> CUENTA </h1>
@@ -127,7 +125,6 @@ export const Formulario = () => {
 
                 </section>
             </section>
-            <Footer />
         </>
     )
 }

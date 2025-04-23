@@ -3,7 +3,7 @@ import './../../styles/styles_home/header_home.css';
 export const Header = () => {
   const user = "Jefe de Personal"
   const account = () => {
-    window.location.href = '/cuenta';
+    window.location.href = '/home/cuenta';
   }
   const logOut = () => {
     window.location.href = '/login';
