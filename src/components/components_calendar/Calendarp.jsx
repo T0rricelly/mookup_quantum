@@ -11,11 +11,8 @@ import "../../styles/styles_calendar/Calendarp.css";
 export const Calendarp = () => {
     return (
         <>
-            <Header />
             <section className="menandcal">
-                <aside className="MENU">
-                    <Menu />
-                </aside>
+                
                     <h1 className="Asistencia_text">ASISTENCIA</h1>
                     <Calendar className="Calendarioo" />
                     <h1 className="Reporte_buttom">REPORTE</h1>
@@ -26,7 +23,6 @@ export const Calendarp = () => {
                         <input type="str" className="hora_inp"></input>
                     </section>
             </section>
-            <Footer />
         </>
     )
 }

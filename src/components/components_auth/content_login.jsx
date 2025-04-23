@@ -24,17 +24,15 @@ export const Content_Login = () => {
   }
 
   const submit = (e) => {
-    localStorage.setItem('logged', 'true');
-    e.preventDefault(e);
+    e.preventDefault();
     if (idCard === idCardTest && password === passwordTest) {
+      localStorage.setItem('logged', 'true');
       window.location.href = '/home';
     } else if (idCard === '' || password === '') {
       emptyCamps();
     } else {
       errorData();
     }
-
-
   }
   const emptyCamps = () => {
     toast.error('Por favor llena todos los campos vacios', {
