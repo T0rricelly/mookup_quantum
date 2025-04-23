@@ -1,10 +1,12 @@
-import Barras from '../../assets/icons/menu_bars.svg'
-import Casa from '../../assets/icons/home.svg'
-import Check from '../../assets/icons/check.svg'
-import Cal from '../../assets/icons/calendar.svg'
-import Contra from '../../assets/icons/sign.svg'
-import Emp from '../../assets/icons/employe.svg'
-import '../../styles/styles_home/Menu.css'
+import { Link } from 'react-router-dom';
+import '../../styles/styles_home/menu.css';
+import Barras from '../../assets/icons/menu_bars.svg';
+import Casa from '../../assets/icons/home.svg';
+import Check from '../../assets/icons/check.svg';
+import Cal from '../../assets/icons/calendar.svg';
+import Contra from '../../assets/icons/sign.svg';
+import Emp from '../../assets/icons/employe.svg';
+
 export const Menu = () => {
   return (
     <ul className='menu'>
@@ -14,39 +16,36 @@ export const Menu = () => {
       </li>
       <li className='text_menu'>
         <img src={Casa} alt="Casa" />
-        <a href="/home">
-        <span>INICIO</span>
-        </a>
+        <Link to="/home">
+          <span>INICIO</span>
+        </Link>
       </li>
       <li className='text_menu'>
         <img src={Check} alt="Check" />
-        <a href="/permisos">
+        <Link to="/home/permisos">
           <span>PERMISOS</span>
-        </a>
+        </Link>
       </li>
       <li className='text_menu'>
         <img src={Cal} alt="Calendario" />
-        <a href="/assistance">
+        <Link to="/home/assistance">
           <span>ASISTENCIA</span>
-        </a>
-
+        </Link>
       </li>
       <li className='text_menu'>
         <img src={Contra} alt="Hoja" />
-        <a href="/contrat">
+        <Link to="/home/contrat">
           <span>CONTRATO</span>
-        </a>
-
+        </Link>
       </li>
       <li className='text_menu'>
         <img src={Emp} alt="Empleado" />
-        <a href="/employe">
+        <Link to="/home/employe">
           <span>EMPLEADOS</span>
-        </a>
+        </Link>
       </li>
     </ul>
   );
-}
+};
 
-
-export default Menu
+export default Menu;
