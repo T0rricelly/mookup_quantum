@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+.cont_home {
+  display: grid;
+  grid-template-columns: 20% 35% 40%;
+  gap: 15px;
+  padding: 10px;
+  align-items: start;
+}.fecha_hora{
+  margin-top: 50px;
+}
+.asides,.mid, .rigth {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr); 
+  gap: 15px;
+}
+/*Izquierda*/
+.saludo,.noti{
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgb(50, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.saludo{
+  background-color: #2CBA7A66;
+  height: 386px;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.noti{
+  background-color: #EFEFEF;
+  height: 813px;
+
+}
+.titu_noti{
+  border-radius: 1em;
+  background-color: #C2EBE3;
+}
+/*Bases*/
+.vaca,.tmp_tra,.asis,.permi,.tareas,.ausencias,.contrato,.historial{
+  border-radius: 1em;
+  background-color: #EFEFEF;
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px rgb(50, 48, 48);
+}
+.titulos{
+  border-radius: 1em;
+  background-color: #DFEEEB;
+  display: inline-block; 
+  padding: 10px;
+}
+/*Medio*/
+.vaca{
+ height: 241px;
+}
+.tmp_tra{
+  height: 202px;
+}
+.asis{
+  height: 241px;
+}
+.permi{
+  height: 444px;
+}
+/*Derecha*/
+.tareas{
+  height: 478px;
+}
+.ausencias{
+  height: 231px;
+}
+.contrato{
+  height: 221px;
+}
+.historial{
+  height: 183px;
+}
+@media (max-width: 900px) {
+  .cont_home {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .cont_home {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+@media (min-width: 900px) {
+  .vaca, .tmp_tra, .asis, .permi,
+  .tareas, .ausencias, .contrato, .historial,.noti,.saludo {
+    min-height: 20vh;
+  }
+}
