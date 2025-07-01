@@ -1,4 +1,4 @@
-import "../../styles/styles_home/Cont_home.css";
+import "./Cont_home.css";
 import { useState, useEffect } from "react";
 const name = 'Santiago'
 export const Cont_home = () => {
@@ -32,28 +32,30 @@ export const Cont_home = () => {
     <>
       <section className="cont_home">
         <section className="asides">
-<aside className="saludo">
-          <p>
-            HOLA:
-            <br />
-            {name}
-            <br />
-            <br />
-            !BIENVENID@!
-            <br /><br />
-            <h3>{fechaText}</h3>
-            <h4 id="hora">{horaActual}</h4>
-          </p>
-        </aside>
-        <aside className="noti">
-          <p>
-            <h3 className="titu_noti">Notificaciones</h3>
-          </p>
-        </aside>
+          <aside className="saludo">
+            <p>
+              HOLA:
+              <br />
+              {name}
+              <br />
+              <br />
+              !BIENVENID@!
+              <nav className="fecha_hora">
+<h3>{fechaText}</h3>
+              <h4 id="hora">{horaActual}</h4>
+              </nav>
+              
+            </p>
+          </aside>
+          <aside className="noti">
+            <p>
+              <h3 className="titu_noti">Notificaciones</h3>
+            </p>
+          </aside>
         </section>
-        
+
         <section className="mid">
-          <article  className="vaca">
+          <article className="vaca">
             <p>
               <h3 className="titulos">Vacaciones</h3>
             </p>

@@ -1,7 +1,7 @@
 import Menu from "./menu.jsx";
 import Header from "./Header_home.jsx";
 import Footer from "../components_auth/footer.jsx";
-import Cont_home from "./cont_home.jsx";
+import Cont_home from "../../views/Empleado/home/cont_home.jsx";
 import '../../styles/styles_home/Home.css';
 import { Routes, Route } from "react-router-dom";
 import Cont_permisos from '../components_permisos/cont_permisos';
