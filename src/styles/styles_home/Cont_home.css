@@ -1,13 +1,5 @@
 .cont_home{
-  display: flex;
-  padding: 10px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-/*Izquierda*/
-.asides{
-  width: 20%;
-  height: 100%;
+    padding: 10px;
 }
 .tiempo{
     display: flex; 
