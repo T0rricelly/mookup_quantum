@@ -15,9 +15,11 @@ export const Home = () => {
     <>
       <Header />
       <div className="contenedor">
+        {/*
         <aside className="MENU">
           <Menu />
         </aside>
+        */}
         <main className="CONTENIDO">
           <Routes>
             <Route index element={<Cont_home />} />

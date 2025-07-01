@@ -1,52 +1,83 @@
 .cont_home{
-    padding: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.tiempo{
-    display: flex; 
-    padding: 1rem;
-    width: 100%;
-    justify-content: space-between; 
+/*Izquierda*/
+.asides{
+  width: 20%;
+  height: 100%;
 }
-.titulo_ini{
-    font-size: 30px;
-}
-.tabla_container {
-    width: 100%;
-    overflow-x: auto;
-    overflow: hidden;
-    margin-top: 1rem;
-    border-radius: 10px;
- 
-    background-color: rgba(167, 167, 167, 0.699);
-  }
-.tabla{  
-    width: 100%;
-    border-collapse:separate;
-    border-spacing: 0; 
-}
-td, th{
-    border-bottom: solid 1px; 
-    border-right:  solid 1px;
-    padding: 10px 20px;
-    text-align: center;
-}
-.tabla tr:last-child td {
-    border-bottom: none;
-  }
-  .tabla th:last-child,td:last-child{
-    border-right: none;
-  }
-  /*.tabla th:last-child{
-    border-right: none;
-  }*/
-@media (max-width: 600px) {
-    .tabla {
-      min-width: 100%;
-    }
+.saludo,.noti{
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
-    td, th {
-      font-size: 14px;
-      padding: 8px;
-    }
-  }
-
+}
+.saludo{
+  background-color: #2CBA7A66;
+}
+.noti{
+  margin-top: 10px;
+  background-color: #EFEFEF;
+  height: 813px;
+}
+.titu_noti{
+  border-radius: 1em;
+  background-color: #C2EBE3;
+}
+/*Bases*/
+.vaca,.tmp_tra,.asis,.permi,.tareas,.ausencias,.contrato,.historial{
+  border-radius: 1em;
+  background-color: #EFEFEF;
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titulos{
+  border-radius: 1em;
+  background-color: #DFEEEB;
+}
+/*Medio*/
+.mid{
+  width: 35%;
+  margin-left: 10px;
+}
+.vaca{
+ height: 241px;
+}
+.tmp_tra{
+  height: 202px;
+}
+.asis{
+  height: 241px;
+}
+.permi{
+  height: 444px;
+}
+/*Derecha*/
+.rigth{
+  width: 40%;
+  margin-left: 15px;
+}
+.tareas{
+  height: 478px;
+}
+.ausencias{
+  height: 231px;
+}
+.contrato{
+  height: 221px;
+}
+.historial{
+  height: 183px;
+}
