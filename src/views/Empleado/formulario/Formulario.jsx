@@ -19,9 +19,11 @@ export const Formulario = () => {
 
                     <form className="formulario" onSubmit={handleSubmit(enviar)}>
                         <h1 className="main_title"> Datos personales: </h1>
+
                         <div>
 
                         </div>
+                        
                         <div className='cont_input'>
                             <label for="nomb" className='sub_titulos'> NOMBRES: </label>
                             <input id="nomb" className='inputs' type="text" placeholder="" {...register(" NOMBRES1 ")} />
