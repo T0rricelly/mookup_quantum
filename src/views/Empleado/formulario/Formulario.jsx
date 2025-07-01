@@ -121,8 +121,6 @@ export const Formulario = () => {
                         </div>
 
                     </form>
-
-
                 </section>
             </section>
         </>
