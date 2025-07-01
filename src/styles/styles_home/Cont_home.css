@@ -1,5 +1,13 @@
 .cont_home{
-    padding: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+/*Izquierda*/
+.asides{
+  width: 20%;
+  height: 100%;
 }
 .tiempo{
     display: flex; 
@@ -7,46 +15,41 @@
     width: 100%;
     justify-content: space-between; 
 }
-.titulo_ini{
-    font-size: 30px;
+.titulos{
+  border-radius: 1em;
+  background-color: #DFEEEB;
 }
-.tabla_container {
-    width: 100%;
-    overflow-x: auto;
-    overflow: hidden;
-    margin-top: 1rem;
-    border-radius: 10px;
- 
-    background-color: rgba(167, 167, 167, 0.699);
-  }
-.tabla{  
-    width: 100%;
-    border-collapse:separate;
-    border-spacing: 0; 
+/*Medio*/
+.mid{
+  width: 35%;
+  margin-left: 10px;
 }
-td, th{
-    border-bottom: solid 1px; 
-    border-right:  solid 1px;
-    padding: 10px 20px;
-    text-align: center;
+.vaca{
+ height: 241px;
 }
-.tabla tr:last-child td {
-    border-bottom: none;
-  }
-  .tabla th:last-child,td:last-child{
-    border-right: none;
-  }
-  /*.tabla th:last-child{
-    border-right: none;
-  }*/
-@media (max-width: 600px) {
-    .tabla {
-      min-width: 100%;
-    }
-  
-    td, th {
-      font-size: 14px;
-      padding: 8px;
-    }
-  }
-
+.tmp_tra{
+  height: 202px;
+}
+.asis{
+  height: 241px;
+}
+.permi{
+  height: 444px;
+}
+/*Derecha*/
+.rigth{
+  width: 40%;
+  margin-left: 15px;
+}
+.tareas{
+  height: 478px;
+}
+.ausencias{
+  height: 231px;
+}
+.contrato{
+  height: 221px;
+}
+.historial{
+  height: 183px;
+}
