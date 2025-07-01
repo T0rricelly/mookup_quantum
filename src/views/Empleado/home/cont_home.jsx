@@ -1,6 +1,7 @@
 import "./Cont_home.css";
 import { useState, useEffect } from "react";
-const name = 'Santiago'
+import { Link } from "react-router-dom";
+const name = "Santiago";
 export const Cont_home = () => {
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
   const [fechaActual, setFechaActual] = useState(new Date());
@@ -13,13 +14,13 @@ export const Cont_home = () => {
     return () => clearInterval(intervalo);
   }, []);
   const opcionesFecha = {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
   };
   const fechaText = fechaActual
-    .toLocaleDateString('es-ES', opcionesFecha)
-    .toUpperCase()
+    .toLocaleDateString("es-ES", opcionesFecha)
+    .toUpperCase();
   /*Hora Actual */
   useEffect(() => {
     const intervalo = setInterval(() => {
@@ -41,66 +42,51 @@ export const Cont_home = () => {
               <br />
               !BIENVENID@!
               <nav className="fecha_hora">
-<h3>{fechaText}</h3>
-              <h4 id="hora">{horaActual}</h4>
+                <h3>{fechaText}</h3>
+                <h4 id="hora">{horaActual}</h4>
               </nav>
-              
             </p>
           </aside>
           <aside className="noti">
-            <p>
-              <h3 className="titu_noti">Notificaciones</h3>
-            </p>
+            <h3 className="titu_noti">Notificaciones</h3>
           </aside>
         </section>
 
         <section className="mid">
-          <article className="vaca">
-            <p>
-              <h3 className="titulos">Vacaciones</h3>
-            </p>
-          </article>
-          <article className="tmp_tra">
-            <p>
-              <h3 className="titulos">Tiempo Trabajado</h3>
-            </p>
-          </article>
-          <article className="asis">
-            <p>
-              <h3 className="titulos">Asistencia</h3>
-            </p>
-          </article>
-          <article className="permi">
-            <p>
-              <h3 className="titulos">Permisos</h3>
-            </p>
-          </article>
-        </section>
-        <section className="rigth">
-          <article className="tareas">
-            <p>
-              <h3 className="titulos">Tareas</h3>
-            </p>
-          </article>
-          <article className="ausencias">
-            <p>
-              <h3 className="titulos">Ausencias</h3>
-            </p>
-          </article>
-          <article className="contrato">
-            <p>
-              <h3 className="titulos">Contrato</h3>
-            </p>
-          </article>
           <article className="historial">
-            <p>
-              <h3 className="titulos">Historial</h3>
-            </p>
+            <h3 className="titulos titulo_histo">Historial de Asistencia</h3>
           </article>
+          <section className="sub_mid">
+            <section className="sub_mid_left">
+              <Link to="/home/assistance">
+                <article className="asis">
+                  <h3 className="titulos">Asistencia</h3>
+                </article>
+              </Link>
+
+              <Link to="/home/permisos">
+                <article className="permi">
+                  <h3 className="titulos">Permisos</h3>
+                </article>
+              </Link>
+            </section>
+<section className="sub_mid_rigth">
+ <article className="ausencias">
+              <h3 className="titulos">Ausencias</h3>
+            </article>
+            <Link to="/home/contrat">
+              <article className="contrato">
+                <h3 className="titulos">Contrato</h3>
+              </article>
+            </Link>
+            <article className="tmp_tra">
+              <h3 className="titulos">Tiempo Trabajado</h3>
+            </article>
+</section>
+           
+          </section>
         </section>
-
       </section>
-
     </>
   );
 };
