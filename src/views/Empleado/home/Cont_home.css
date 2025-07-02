@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.cont_home {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  gap: 15px;
+  padding: 10px;
+  align-items: start;
+}.fecha_hora{
+  margin-top: 50px;
+}
+.sub_mid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+}
+.mid{
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  gap: 15px;
+}
+.sub_mid_left{
+ display: grid;
+  grid-template-rows: repeat(2,auto);
+  gap: 15px;
+}
+.sub_mid_rigth{
+ display: grid;
+  grid-template-rows: repeat(3,auto);
+  gap: 15px;
+}
+.asides, .mid {
+  display: grid;
+  grid-template-rows: repeat(2, auto); 
+  gap: 15px;
+}
+/*Izquierda*/
+.saludo,.noti{
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgb(50, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.saludo{
+  background-color: #2CBA7A66;
+  height: 386px;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.noti{
+  background-color: #EFEFEF;
+  height: 813px;
+
+}
+.titu_noti{
+  border-radius: 1em;
+  background-color: #C2EBE3;
+}
+/*Bases*/
+.tmp_tra,.asis,.permi,.ausencias,.contrato,.historial{
+  border-radius: 1em;
+  background-color: #EFEFEF;
+  border: solid 1px;
+  border-radius: 1em;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px rgb(50, 48, 48);
+}
+.titulo_histo{
+  margin: 0px auto;
+}
+.titulos{
+  border-radius: 1em;
+  background-color: #DFEEEB;
+  width: fit-content;
+  padding: 10px;
+}
+/*Medio*/
+.tmp_tra{
+  height: 266px;
+}
+.asis{
+  height: 241px;
+}
+.permi{
+  height: 543px;
+}
+/*Derecha*/
+.ausencias{
+  height:241px;
+}
+.contrato{
+  height: 254px;
+}
+.historial{
+  height: 408px;
+}
+@media (max-width: 900px) {
+  .cont_home {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .cont_home {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+@media (min-width: 900px) {
+  .vaca, .tmp_tra, .asis, .permi,
+  .tareas, .ausencias, .contrato, .historial,.noti,.saludo {
+    min-height: 20vh;
+  }
+}

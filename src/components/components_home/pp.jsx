@@ -1,31 +1,4 @@
-import "../../styles/styles_home/Cont_home.css";
-import { useState, useEffect } from "react";
-const name = 'Santiago'
-export const Cont_home = () => {
-  const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
-
-  useEffect(() => {
-    const intervalo = setInterval(() => {
-      setHoraActual(new Date().toLocaleTimeString());
-    }, 1000);
-
-    return () => clearInterval(intervalo);
-  }, []);
-  return (
-    <>
-      <section className="cont_home">
-        <nav className="tiempo">
-          <h1 className="titulo_ini">INICIO</h1>
-          <article>
-            <h3>Hora</h3>
-            <h4 id="hora">{horaActual}</h4>
-          </article>
-
-        </nav>
-        <article className="saludo">
-          <p>Hola {name}</p>
-        </article>
-        <section className="tabla_container">
+<section className="tabla_container">
           <table className="tabla">
             <thead>
               <tr>
@@ -93,9 +66,3 @@ export const Cont_home = () => {
 
           </table>
         </section>
-      </section>
-
-    </>
-  );
-};
-export default Cont_home;

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import '../../styles/styles_home/menu.css';
-import Barras from '../../assets/icons/menu_bars.svg';
-import Casa from '../../assets/icons/home.svg';
-import Check from '../../assets/icons/check.svg';
-import Cal from '../../assets/icons/calendar.svg';
-import Contra from '../../assets/icons/sign.svg';
-import Emp from '../../assets/icons/employe.svg';
+import './Menu.css';
+import Barras from './../../assets/icons/menu_bars.svg';
+import Casa from './../../assets/icons/home.svg';
+import Check from './../../assets/icons/check.svg';
+import Cal from './../../assets/icons/calendar.svg';
+import Contra from './../../assets/icons/sign.svg';
+import Emp from './../../assets/icons/employee.svg';
 
 export const Menu = () => {
   return (

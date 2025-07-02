@@ -1,7 +1,3 @@
-import React from 'react'
-import Header from '../components_home/Header_home'
-import Footer from '../components_auth/footer'
-import Menu from '../components_home/menu'
 import search from './../../assets/icons/lupa.svg'
 import './../../styles/styles_employe/employe.css'
 
