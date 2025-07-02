@@ -10,6 +10,7 @@ import { Formulario } from './Formulario';
 import Employe from '../Components_employe/Employe';
 
 import Contrato  from '../../views/Empleado/contrato/contrat.jsx';
+import Contratoj from '../../views/Jefe/contratoj/ContratoJefe.jsx'; // Asegúrate que coincida con el nuevo nombre del archivo
 export const Home = () => {
   return (
     <>
@@ -26,6 +27,7 @@ export const Home = () => {
             <Route path="cuenta" element={<Formulario />} />
             <Route path="employe" element={<Employe />} />
             <Route path="contrat" element={<Contrato />} />
+            <Route path="contratoJefe" element={<Contratoj />} />
           </Routes>
         </main>
       </div>
