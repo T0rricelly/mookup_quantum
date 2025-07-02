@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Cont_permisos from '../components_permisos/cont_permisos';
 import Calendarp from '../components_calendar/Calendarp';
 import { Formulario } from '../../views/Empleado/formulario/Formulario.jsx';
-import Employe from '../Components_employe/Employe';
+import Employe from '../../views/Jefe/Admin_Empleado/Employe.jsx';
 import Table_Employe from './table_employe';
 
 export const Home = () => {
