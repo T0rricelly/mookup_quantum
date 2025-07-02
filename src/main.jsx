@@ -1,12 +1,12 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { New } from './components/components_auth/New';
-import { Content_Login } from './components/components_auth/content_login';
-import { BrowserRouter, Routes, Navigate } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import { Forgot_Pasword } from './components/components_auth/Forgot_Pasword';
-import { Restore } from './components/components_auth/Restore';
-import Home from './components/components_home/Home';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Navigate } from 'react-router-dom';
+import { New } from './views/Empleado/auth/new/New';
+import { Content_Login } from './views/Empleado/auth/login/content_login';
+import { Forgot_Pasword } from './views/Empleado/auth/forgot/Forgot_Pasword';
+import { Restore } from './views/Empleado/auth/new/Restore';
+import { Home } from './views/Home';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

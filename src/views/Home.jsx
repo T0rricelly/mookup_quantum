@@ -1,14 +1,14 @@
-import Menu from "./menu.jsx";
-import Header from "./Header_home.jsx";
-import Footer from "../components_auth/footer.jsx";
-import Cont_home from "../../views/Empleado/home/cont_home.jsx";
-import '../../styles/styles_home/Home.css';
+import Menu from "./../components/menu/menu.jsx";
+import Header from "./../components/header/Header_home.jsx";
+import Footer from "./../components/footer/Footer.jsx";
+import Cont_home from "./../views/Empleado/home/cont_home.jsx";
+import './Home.css';
 import { Routes, Route } from "react-router-dom";
-import Cont_permisos from '../components_permisos/cont_permisos';
-import Calendarp from '../components_calendar/Calendarp';
-import { Formulario } from '../../views/Empleado/formulario/Formulario.jsx';
-import Employe from '../Components_employe/Employe';
-import Table_Employe from './table_employe';
+import Cont_permisos from '../components/components_permisos/cont_permisos.jsx';
+import Calendarp from '../components/components_calendar/Calendarp.jsx';
+import { Formulario } from './Empleado/formulario/Formulario.jsx';
+import Employe from '../components/Components_employe/Employe.jsx';
+import Table_Employe from '../components/components_home/table_employe.jsx';
 
 export const Home = () => {
   return (
