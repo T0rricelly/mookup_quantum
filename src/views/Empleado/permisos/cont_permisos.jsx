@@ -16,7 +16,7 @@ const Permisos = () => {
 
         <article className="label">
           <label>COMPROBANTE</label>
-          <div className="archivo">
+          <div className="archivo"> 
             <input type="file" id="file" />
           </div>
         </article>

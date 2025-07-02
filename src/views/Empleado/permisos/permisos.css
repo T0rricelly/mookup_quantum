@@ -68,7 +68,6 @@
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 .btn button:hover {
   background-color: #ccc;
 }

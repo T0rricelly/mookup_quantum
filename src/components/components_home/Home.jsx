@@ -9,7 +9,7 @@ import Calendarp from '../components_calendar/Calendarp';
 import { Formulario } from '../../views/Empleado/formulario/Formulario.jsx';
 import Employe from '../Components_employe/Employe';
 import Table_Employe from './table_employe';
-
+ 
 export const Home = () => {
   return (
     <>
