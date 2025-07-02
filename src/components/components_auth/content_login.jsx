@@ -1,6 +1,4 @@
 import './../../styles/styles_auth/content_login.css';
-import HeaderAuth from './Header_Auth';
-import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
@@ -61,7 +59,6 @@ export const Content_Login = () => {
 
   return (
     <>
-      <HeaderAuth />
       <main className='container'>
         <h2 className='container__title'>Login</h2>
         <form action="" className='container__form' onSubmit={submit} >
@@ -103,7 +100,6 @@ export const Content_Login = () => {
           <a href="/forgot" className='container__link'>Olvide mi contraseña</a>
         </form>
       </main>
-      <Footer />
       <ToastContainer
         position="top-right"
         autoClose={5000}
