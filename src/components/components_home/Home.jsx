@@ -8,8 +8,8 @@ import Cont_permisos from '../components_permisos/cont_permisos';
 import Calendarp from '../components_calendar/Calendarp';
 import { Formulario } from './Formulario';
 import Employe from '../Components_employe/Employe';
-import Table_Employe from './table_employe';
 
+import Contrato  from '../../views/Empleado/contrato/contrat.jsx';
 export const Home = () => {
   return (
     <>
@@ -25,7 +25,7 @@ export const Home = () => {
             <Route path="assistance" element={<Calendarp />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="employe" element={<Employe />} />
-            <Route path="contrat" element={<Table_Employe />} />
+            <Route path="contrat" element={<Contrato />} />
           </Routes>
         </main>
       </div>
