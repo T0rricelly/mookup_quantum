@@ -1,8 +1,5 @@
 import { useState } from "react";
 import "../../styles/styles_permisos/Cont_permisos.css";
-import Header from "../components_home/Header_home";
-import Footer from "../components_auth/footer";
-import Menu from "../components_home/menu";
 
 export const Cont_permisos = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
