@@ -1,0 +1,74 @@
+.cont_permisos{
+  padding: 20px;
+  border-radius: 1em;
+  width: 100%;
+  margin: auto;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color:#D9D9D9;
+  padding: 40px;
+  border-radius: 1em;
+   min-height: 400px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.label select,
+.label input[type="text"], 
+.label input[type="date"],
+.label input[type="file"]{
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+}
+
+.archivo input[type="file"]{
+  width: 100%;
+}
+
+.fecha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fecha input {
+  flex: 1;
+}
+
+.icono {
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  height: 83px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn button:hover {
+  background-color: #ccc;
+}
