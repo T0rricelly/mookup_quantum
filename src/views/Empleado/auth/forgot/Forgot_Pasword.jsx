@@ -1,4 +1,4 @@
-import './../../styles/styles_auth/forgot_pasword.css';
+import './forgot_pasword.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';

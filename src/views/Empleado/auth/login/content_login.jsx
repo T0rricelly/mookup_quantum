@@ -1,9 +1,9 @@
-import './../../styles/styles_auth/content_login.css';
+import './content_login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
-import Hidden from './../../assets/icons/hidden.svg'
-import Show from './../../assets/icons/show.svg'
+import Hidden from './../../../../assets/icons/hidden.svg'
+import Show from './../../../../assets/icons/show.svg'
 
 const idCardTest = '1031650532';
 const passwordTest = '1234567890';
@@ -61,7 +61,7 @@ export const Content_Login = () => {
     <>
       <main className='container'>
         <h2 className='container__title'>Login</h2>
-        <form action="" className='container__form' onSubmit={submit} >
+        <form action="" className='container__form' onSubmit={submit}>
           <label htmlFor="id_card" className='container__label'>Numero de documento</label>
           <input
             type="text"

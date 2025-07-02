@@ -1,5 +1,5 @@
 import quantumLogo from './../../assets/images/quantum_logo.png';
-import './../../styles/styles_home/header_home.css';
+import './header_home.css';
 export const Header = () => {
   const user = "Jefe de Personal"
   const account = () => {

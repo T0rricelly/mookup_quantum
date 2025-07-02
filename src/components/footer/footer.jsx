@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../styles/styles_auth/footer.css'
+import './footer.css'
 import quantumLogo from './../../assets/images/quantum_logo.png'
 import instagramLogo from './../../assets/icons/instagram_logo.svg'
 import facebookLogo from './../../assets/icons/facebook_logo.svg'
