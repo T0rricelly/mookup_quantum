@@ -1,19 +1,41 @@
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 .cont_home {
   display: grid;
-  grid-template-columns: 20% 35% 40%;
+  grid-template-columns: 20% 75%;
   gap: 15px;
   padding: 10px;
   align-items: start;
 }.fecha_hora{
   margin-top: 50px;
 }
-.asides,.mid, .rigth {
+.sub_mid{
   display: grid;
-  grid-template-rows: repeat(1, 1fr); 
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+}
+.mid{
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  gap: 15px;
+}
+.sub_mid_left{
+ display: grid;
+  grid-template-rows: repeat(2,auto);
+  gap: 15px;
+}
+.sub_mid_rigth{
+ display: grid;
+  grid-template-rows: repeat(3,auto);
+  gap: 15px;
+}
+.asides, .mid {
+  display: grid;
+  grid-template-rows: repeat(2, auto); 
   gap: 15px;
 }
 /*Izquierda*/
@@ -44,7 +66,7 @@
   background-color: #C2EBE3;
 }
 /*Bases*/
-.vaca,.tmp_tra,.asis,.permi,.tareas,.ausencias,.contrato,.historial{
+.tmp_tra,.asis,.permi,.ausencias,.contrato,.historial{
   border-radius: 1em;
   background-color: #EFEFEF;
   border: solid 1px;
@@ -55,37 +77,34 @@
   justify-content: space-between;
   box-shadow: 0 4px 4px rgb(50, 48, 48);
 }
+.titulo_histo{
+  margin: 0px auto;
+}
 .titulos{
   border-radius: 1em;
   background-color: #DFEEEB;
-  display: inline-block; 
+  width: fit-content;
   padding: 10px;
 }
 /*Medio*/
-.vaca{
- height: 241px;
-}
 .tmp_tra{
-  height: 202px;
+  height: 266px;
 }
 .asis{
   height: 241px;
 }
 .permi{
-  height: 444px;
+  height: 543px;
 }
 /*Derecha*/
-.tareas{
-  height: 478px;
-}
 .ausencias{
-  height: 231px;
+  height:241px;
 }
 .contrato{
-  height: 221px;
+  height: 254px;
 }
 .historial{
-  height: 183px;
+  height: 408px;
 }
 @media (max-width: 900px) {
   .cont_home {
