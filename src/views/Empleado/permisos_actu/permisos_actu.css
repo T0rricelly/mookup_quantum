@@ -1,4 +1,7 @@
-
+.cont_permisos_actu {
+  padding: 20px;
+  margin: auto;
+}
 #actu_btn {
     color: #2CBA7A;
     flex: none;

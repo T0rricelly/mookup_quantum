@@ -1,36 +1,36 @@
 import { Link } from 'react-router-dom';
 import "./permisos_actu.css";
-const Permisos = () => {
+const Permisos_actu = () => {
     return (
 <>
-        <section className="cont_permisos">
-            <h2>Actualizar</h2>
+        <section className="cont_permisos_actu">
+            <h2>ACTUALIZAR PERMISOS</h2>
 
             <section className="formulario_permi">
-                <article className="label">
+                <article className="label_perm">
                     <label>TIPO DE PERMISO</label>
                     <select>
                         <option>SELECCIONAR</option>
                     </select>
                 </article>
 
-                <article className="label">
+                <article className="label_perm">
                     <label>COMPROBANTE</label>
-                    <div className="archivo">
+                    <div className="archivo_perm">
                         <input type="file" id="file" />
                     </div>
                 </article>
 
-                <article className="label">
+                <article className="label_perm">
                     <label>FECHA INICIO</label>
-                    <aside className="fecha">
+                    <aside className="fecha_perm">
                         <input type="date" placeholder="dd/mm/aaaa" />
                     </aside>
                 </article>
 
-                <article className="label">
+                <article className="label_perm">
                     <label>FECHA INICIO</label>
-                    <aside className="fecha">
+                    <aside className="fecha_perm">
                         <input type="date" placeholder="dd/mm/aaaa" />
                     </aside>
                 </article>
@@ -41,7 +41,9 @@ const Permisos = () => {
                 <Link to="/home/permisos">
                     <button id="cancel">CANCELAR</button>
                 </Link>
-                <button className="btn_regis">REGISTROS</button>
+                <Link to="/home/permisos/regis" className="btn_regis">
+                <button>REGISTROS</button>
+                </Link>
 
             </nav>
         </section>
@@ -49,4 +51,4 @@ const Permisos = () => {
     );
 };
 
-export default Permisos;
+export default Permisos_actu;
