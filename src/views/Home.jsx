@@ -4,7 +4,7 @@ import Footer from "./../components/footer/Footer.jsx";
 import Cont_home from "./../views/Empleado/home/cont_home.jsx";
 import './Home.css';
 import { Routes, Route } from "react-router-dom";
-import Cont_permisos from '../components_permisos/cont_permisos';
+import Cont_permisos from './../components/';
 import Calendarp from '../components_calendar/Calendarp';
 import { Formulario } from './Formulario';
 import Employe from '../Components_employe/Employe';
