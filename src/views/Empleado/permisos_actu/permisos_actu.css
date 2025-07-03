@@ -1,0 +1,45 @@
+.cont_permisos_actu {
+  padding: 20px;
+  margin: auto;
+}
+#actu_btn {
+    color: #2CBA7A;
+    flex: none;
+}
+
+#actu_btn:hover {
+    color: #ffffff;
+    background-color: #2CBA7A;
+}
+
+.btn_actu .btn_regis {
+    grid-column: 4;
+}
+
+@media (max-width: 1000px) {
+    .btn_actu {
+        background-color: #78e221;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .btn_actu .btn_regis {
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .btn_actu {
+        background-color: #2CBA7A;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn_actu .btn_regis {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn_actu {
+        grid-template-columns: 1fr;
+    }
+}
