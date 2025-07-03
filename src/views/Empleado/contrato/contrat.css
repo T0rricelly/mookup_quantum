@@ -1,0 +1,58 @@
+.container-contrato {
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+gap: 5%; 
+padding: 3%; 
+background-color: #ffffff; 
+font-family: Arial, sans-serif; 
+margin-top: 5px;
+height: 350px;
+margin-bottom: 5px;
+
+}
+.campo-item {
+display: flex; 
+flex-direction: column; 
+font-size: 200%;
+}
+.campo-label {
+font-weight: bold; 
+margin-bottom: 2px; 
+color: #333; 
+font-size: 1em; 
+align-items: center;
+}
+.campo-editor {
+background-color: #e0e0e0; 
+height: 40px; 
+border-radius: 5px; 
+font-size: 1em; 
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.container-descargar-contrato {
+grid-column: 2/ 3; 
+display: flex; 
+justify-content: center; 
+align-items: flex-start;
+padding: 0;
+align-items: flex-start;
+margin-top: -30px;
+margin-right: 3%;
+}
+.boton-descargar {
+background-color: #a7f0ba; 
+color: #333; 
+border: none; 
+padding: 12px 25px; 
+border-radius: 1px; 
+cursor: pointer; 
+font-weight: bold;
+font-size: 1.2em; 
+text-transform: uppercase; 
+transition: background-color 0.2s ease; 
+}
+.boton-descargar:hover {
+background-color: #96e0a9;
+}

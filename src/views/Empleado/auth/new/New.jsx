@@ -1,6 +1,3 @@
-import React from 'react'
-import HeaderAuth from './Header_Auth'
-import Footer from './footer'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useState } from 'react'
@@ -51,7 +48,6 @@ export const New = () => {
   }
   return (
     <>
-      <HeaderAuth />
       <main className='container'>
         <h2 className='container__title'>Nueva Contraseña</h2>
         <form action="POST" className='container__form'>
@@ -80,7 +76,6 @@ export const New = () => {
           </button>
         </form>
       </main>
-      <Footer />
       <ToastContainer
         position='top-right'
         autoClose={5000}
