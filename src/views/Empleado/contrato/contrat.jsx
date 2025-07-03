@@ -42,7 +42,7 @@ const Contrato = () => {
     </div>
 
     <div className="campo-item "> 
-        <label className="campo-label">HISTORIAL</label>
+        <label className="campo-label">AREA</label>
         <input className="campo-editor"></input>
     </div>
     </div>
