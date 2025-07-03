@@ -1,38 +1,23 @@
-.cont_permisos{
+* {
+  box-sizing: border-box;
+}
+
+.cont_permisos {
   padding: 20px;
-  border-radius: 1em;
-  width: 100%;
   margin: auto;
 }
 
-.formulario {
+.formulario_permi {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background-color:#D9D9D9;
-  padding: 40px;
-  border-radius: 1em;
-   min-height: 400px;
+  background-color: #D9D9D9;
+  padding: 4rem;
+  border-radius: 30px;
+  min-height: 400px;
 }
 
-.label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-.label select,
-.label input[type="text"], 
-.label input[type="date"],
-.label input[type="file"]{
-  margin-top: 5px;
-  padding: 10px;
-  border: none;
-  background-color: white;
-  font-size: 14px;
-}
-
-.archivo input[type="file"]{
+.archivo input[type="file"] {
   width: 100%;
 }
 
@@ -43,31 +28,86 @@
 }
 
 .fecha input {
-  flex: 1;
+  width: 100%;
 }
 
-.icono {
-  font-size: 20px;
-}
-
-.btn {
-  margin-top: 20px;
+.label {
   display: flex;
-  height: 83px;
-  justify-content: space-between;
-  gap: 10px;
+  flex-direction: column;
+  font-weight: bold;
 }
 
-.btn button {
-  flex: 1;
+.label select,
+.label input[type="text"],
+.label input[type="date"],
+.label input[type="file"] {
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+}
+
+.btn,
+.btn_actu {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.btn button,
+.btn_actu button {
+  width: 100%;
+  height: 83px;
   padding: 10px;
   font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 15px;
   background-color: #D9D9D9;
   cursor: pointer;
   transition: background-color 0.2s;
+  box-sizing: border-box;
 }
-.btn button:hover {
-  background-color: #ccc;
+
+.btn button:hover,
+.btn_actu button:hover {
+  background-color: #c1bdbd;
+}
+
+#crear {
+  color: #2CBA7A;
+  flex: none;
+}
+
+#crear:hover {
+  color: #ffffff;
+  background-color: #2CBA7A;
+}
+
+#cancel {
+  color: #DA1B1B;
+}
+
+#cancel:hover {
+  color: #ffffff;
+  background-color: #DA1B1B;
+}
+
+@media (max-width: 900px) {
+  .btn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:700px) {
+  .btn {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:700px) {
+  .formulario_permi {
+    grid-template-columns: 1fr;
+  }
 }

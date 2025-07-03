@@ -106,18 +106,14 @@ a {
 .historial{
   height: 408px;
 }
-@media (max-width: 900px) {
-  .cont_home {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 900px) {
+
+@media (max-width: 1100px) {
   .cont_home {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .vaca, .tmp_tra, .asis, .permi,
   .tareas, .ausencias, .contrato, .historial,.noti,.saludo {
     min-height: 20vh;

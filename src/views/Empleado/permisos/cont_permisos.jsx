@@ -1,12 +1,12 @@
-
+import { Link } from 'react-router-dom';
 import "./permisos.css";
-import calendar from '../../../assets/icons/calendar.svg';
 const Permisos = () => {
   return (
+    <>
     <section className="cont_permisos">
       <h2>PERMISOS</h2>
 
-      <section className="formulario">
+      <section className="formulario_permi">
         <article className="label">
           <label>TIPO DE PERMISO</label>
           <select>
@@ -16,7 +16,7 @@ const Permisos = () => {
 
         <article className="label">
           <label>COMPROBANTE</label>
-          <div className="archivo"> 
+          <div className="archivo">
             <input type="file" id="file" />
           </div>
         </article>
@@ -25,7 +25,6 @@ const Permisos = () => {
           <label>FECHA INICIO</label>
           <aside className="fecha">
             <input type="date" placeholder="dd/mm/aaaa" />
-              <img src={calendar} alt="" />
           </aside>
         </article>
 
@@ -33,18 +32,24 @@ const Permisos = () => {
           <label>FECHA INICIO</label>
           <aside className="fecha">
             <input type="date" placeholder="dd/mm/aaaa" />
-              <img src={calendar} alt="" />
           </aside>
         </article>
       </section>
 
       <nav className="btn">
-        <button>CREAR</button>
-        <button>CANCELAR</button>
-        <button>ACTUALIZAR</button>
-        <button>REGISTROS</button>
+          <Link to="/home/permisos/actu">
+            <button className="actu">ACTUALIZAR</button>
+          </Link>
+          <Link to="/home/permisos/regis">
+            <button className="regis">REGISTROS</button>
+          </Link>
+          <button id="crear">CREAR</button>
+          <Link to="/home">
+            <button id="cancel">CANCELAR</button>
+          </Link>
       </nav>
     </section>
+    </>
   );
 };
 
