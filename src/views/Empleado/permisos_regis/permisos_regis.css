@@ -1,0 +1,14 @@
+.cont_permisos_regis {
+  padding: 20px;
+  margin: auto;
+}
+.header_perm_regis{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: ;
+}
+
+#regre{
+    height: 68px;
+    border-radius: 5px;
+}
