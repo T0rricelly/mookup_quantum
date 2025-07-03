@@ -107,11 +107,6 @@ a {
 @media (max-width: 900px) {
   .cont_home {
     grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 900px) {
-  .cont_home {
-    grid-template-columns: 1fr;
     gap: 25px;
   }
 }
