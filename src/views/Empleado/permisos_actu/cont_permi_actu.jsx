@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import "./permisos_actu.css";
 const Permisos = () => {
     return (
+<>
         <section className="cont_permisos">
             <h2>Actualizar</h2>
 
@@ -44,6 +45,7 @@ const Permisos = () => {
 
             </nav>
         </section>
+</>
     );
 };
 
