@@ -1,6 +1,6 @@
 import './formu.css';
 import { useForm } from 'react-hook-form';
-
+import { Link } from 'react-router-dom';
 
 export const Formulario = () => {
 
@@ -14,6 +14,9 @@ export const Formulario = () => {
         <>
           
             <section className='Contenedor_Principal'>
+                <header className='encabezado'>
+                    <h1 className="titulo_principal">Añadir empleado</h1>
+                </header>
 
                 <section className="Contenedor_Formulario">
 
@@ -165,8 +168,19 @@ export const Formulario = () => {
                             <label htmlFor = "parentesco" className='sub_titulos'> PARENTESCO: </label>
                             <input id = "parentesco" className='inputs' type="text" placeholder="" {...register(" PARENTESCO ")} />
                         </div>
+
                     </form>
                 </section>
+                <div className='Contenedor_Botones'>
+                    <Link to="/home/employe">
+                        <div className='boton_cancelar'>
+                            <h1 className='texto_boton_cancelar'> Cancelar </h1>
+                        </div>
+                    </Link>
+                    <div className='boton_anadir'>
+                        <h1 className='texto_boton_anadir'> Añadir </h1>
+                    </div>
+                </div>
             </section>
         </>
     )

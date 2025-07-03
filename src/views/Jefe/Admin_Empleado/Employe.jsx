@@ -2,6 +2,7 @@ import anadir from '../../../../src/assets/icons/Plus.svg'
 import search from '../../../../src/assets/icons/Search.svg'
 import update from '../../../../src/assets/icons/Update Left Rotation.svg'
 import cancel from '../../../../src/assets/icons/Cancel.svg'
+import { Link } from 'react-router-dom'
 import './employe.css'
 
 const Employe = () => {
@@ -13,10 +14,12 @@ const Employe = () => {
                 </div>
                 <div className="contenido_admin_empleado">
                     <div className='cajas_admin_empleado'>
-                        <div className='seccion_anadir_empleado'>
-                            <img src={anadir} alt="" />
-                            <h4 className='titulo_categorias'> Añadir Empleado</h4>
-                        </div>
+                        <Link to = "/home/anadir_empleado">
+                            <div className='seccion_anadir_empleado'>
+                                <img src={anadir} alt="" />
+                                <h4 className='titulo_categorias'> Añadir Empleado</h4>
+                            </div>
+                        </Link>
                     </div>
                     <div className='cajas_admin_empleado'>
                         <div className='seccion_anadir_empleado'>

@@ -6,8 +6,9 @@ import '../../styles/styles_home/Home.css';
 import { Routes, Route } from "react-router-dom";
 import Cont_permisos from '../components_permisos/cont_permisos';
 import Calendarp from '../components_calendar/Calendarp';
-import { Formulario } from '../../views/Empleado/formulario/Formulario.jsx';
+import { Formulario } from '../../views/Jefe/formulario_JEFE/Formulario_JEFE.jsx';
 import Employe from '../../views/Jefe/Admin_Empleado/Employe.jsx';
+import Cuenta from '../../views/Jefe/Cuenta/Cuenta_JEFE.jsx';
 import Table_Employe from './table_employe';
 
 export const Home = () => {
@@ -25,7 +26,8 @@ export const Home = () => {
             <Route index element={<Cont_home />} />
             <Route path="permisos" element={<Cont_permisos />} />
             <Route path="assistance" element={<Calendarp />} />
-            <Route path="cuenta" element={<Formulario />} />
+            <Route path="anadir_empleado" element={<Formulario />} />
+            <Route path="cuenta" element={<Cuenta />} />
             <Route path="employe" element={<Employe />} />
             <Route path="contrat" element={<Table_Employe />} />
           </Routes>
