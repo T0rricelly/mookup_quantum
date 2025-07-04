@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Menu from "./../components/menu/menu.jsx";
 import Header from "./../components/header/Header_home.jsx";
@@ -18,7 +19,7 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <div className="contenedor">
+      {/* <div className="contenedor"> */}
         {/*
         <aside className="MENU">
           <Menu />
@@ -29,7 +30,7 @@ export const Home = () => {
             <Route index element={<Cont_home />} />
             <Route path="permisos" element={<Cont_permisos />} />
             <Route path="permisos/actu" element={<Cont_permisos_actu />} />
-            <Route path="permisos/regis" element={<Cont_permisos_regis />} />
+            <Route path="permisos/regis" element={<Cont_permisos_regis 
             <Route path="assistance" element={<Calendarp />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="employe" element={<Employe />} />
@@ -37,7 +38,7 @@ export const Home = () => {
             <Route path="contratoJefe" element={<Contratoj />} />
           </Routes>
         </main>
-      </div>
+      {/* </div> */}
       <Footer />
     </>
   );

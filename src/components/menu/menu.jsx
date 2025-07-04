@@ -1,50 +1,62 @@
-import { Link } from 'react-router-dom';
 import './Menu.css';
-import Barras from './../../assets/icons/menu_bars.svg';
-import Casa from './../../assets/icons/home.svg';
+import { Link } from 'react-router-dom';
+import Dash from './../../assets/icons/dashboard.svg';
 import Check from './../../assets/icons/check.svg';
-import Cal from './../../assets/icons/calendar.svg';
-import Contra from './../../assets/icons/sign.svg';
-import Emp from './../../assets/icons/employee.svg';
+import Cal from './../../assets/icons/assistance.svg';
+import Contrat from './../../assets/icons/contrat.svg';
+import Help from './../../assets/icons/help.svg';
+import Logout from './../../assets/icons/logout.svg';
 
 export const Menu = () => {
+  const name = "Sena"
   return (
-    <ul className='menu'>
-      <li className='titulo_menu'>
-        <img src={Barras} alt="Barras_menu" />
-        <span>MENU</span>
-      </li>
-      <li className='text_menu'>
-        <img src={Casa} alt="Casa" />
-        <Link to="/home">
-          <span>INICIO</span>
-        </Link>
-      </li>
-      <li className='text_menu'>
-        <img src={Check} alt="Check" />
-        <Link to="/home/permisos">
-          <span>PERMISOS</span>
-        </Link>
-      </li>
-      <li className='text_menu'>
-        <img src={Cal} alt="Calendario" />
-        <Link to="/home/assistance">
-          <span>ASISTENCIA</span>
-        </Link>
-      </li>
-      <li className='text_menu'>
-        <img src={Contra} alt="Hoja" />
-        <Link to="/home/contrat">
-          <span>CONTRATO</span>
-        </Link>
-      </li>
-      <li className='text_menu'>
-        <img src={Emp} alt="Empleado" />
-        <Link to="/home/employe">
-          <span>EMPLEADOS</span>
-        </Link>
-      </li>
-    </ul>
+    <>
+      <section className="menu">
+
+        <div className="block_up">
+        <section className='menu_info'>
+          <div className="info_inicial ">{name.charAt(0)}</div>
+          <p className="info_nombre">{name}</p>
+        </section>
+
+
+          <Link to="/home" className='block_link'>
+            <img src={Dash} alt="Casa" />
+            <span>Inicio </span>
+          </Link>
+
+
+          <Link to="/home/assistance" className='block_link'>
+            <img src={Cal} alt="Calendario" />
+            <span>Asistencia </span>
+          </Link>
+
+          <Link to="/home/contrat" className='block_link'>
+            <img src={Contrat} alt="Hoja" />
+            <span>Contrato </span>
+          </Link>
+
+          <Link to="/home/permisos" className='block_link'>
+            <img src={Check} alt="Check" />
+            <span>Permiso </span>
+          </Link>
+        </div>
+        <div className="block_down">
+
+          <Link to="/home/employe" className='block_link'>
+            <img src={Help} alt="Empleado" />
+            <span>Terminos y condiciones </span>
+          </Link>
+
+
+          <Link to="/home/" className='block_link'>
+            <img src={Logout} alt="Empleado" />
+            <span>Salir de tu cuenta </span>
+          </Link>
+
+        </div>
+      </section>
+    </>
   );
 };
 
