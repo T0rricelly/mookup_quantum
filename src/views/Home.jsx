@@ -30,7 +30,7 @@ export const Home = () => {
             <Route index element={<Cont_home />} />
             <Route path="permisos" element={<Cont_permisos />} />
             <Route path="permisos/actu" element={<Cont_permisos_actu />} />
-            <Route path="permisos/regis" element={<Cont_permisos_regis 
+            <Route path="permisos/regis" element={<Cont_permisos_regis/>} />
             <Route path="assistance" element={<Calendarp />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="employe" element={<Employe />} />
