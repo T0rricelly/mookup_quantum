@@ -94,13 +94,13 @@
 }
 
 @media (max-width: 900px) {
-  .btn {
+  .btn_perm {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width:700px) {
-  .btn {
+  .btn_perm {
     grid-template-columns: 1fr;
   }
 }

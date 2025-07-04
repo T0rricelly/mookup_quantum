@@ -5,6 +5,7 @@
     justify-content: space-around;
     background-color: #EFEFEF;
     align-items: center;
+    bottom: 0;
 }
 .footer__img{
     width: 250px;
