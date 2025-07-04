@@ -1,0 +1,71 @@
+.cont_permisos_regis {
+  padding: 20px;
+  margin: auto;
+}
+
+.header_perm_regis {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+}
+
+#regre {
+  height: 68px;
+  border-radius: 5px;
+}
+
+.cont_permisos_regis {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.tabla_perm {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.head_tabla_perm {
+  background-color: #f3fffc;
+  border-bottom: 1px solid #a3f5e9;
+}
+
+.titulo_tabla_perm {
+  padding: 12px;
+  text-align: center;
+}
+
+.body_tabla_perm {
+  background-color: #fff;
+}
+
+.body_tabla_perm:hover {
+  background-color: #e9e5e5;
+}
+
+.cont_tabla_perm {
+  border-top: 1px solid #f0f0f0;
+}
+
+.campos_tabla_perm {
+  text-align: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+.campos_tabla_perm_file {
+  align-items: center;
+  text-align: center;
+}
+
+.campos_tabla_perm_est {
+  color: #00c181;
+}
+
+.elm_tabla_perm {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
