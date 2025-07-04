@@ -1,82 +1,172 @@
-.menandcal{
-    display: flex;
-    padding: 15px;
-    margin-bottom: 30px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 20px;
 }
-.Calendarioo{
-    margin-left: -130px;
-    margin-top: 90px;
-    width: 550px;
-    height: 350px;
+
+.contenedor1 {
+  background-color: #fff;
+  display: flex;
+  gap: 10%;
+  margin-left: 15vw;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
 }
-.react-calendar__navigation button { /*mes de la parte de arriba */
-    font-size: 25px;
+
+.AsistenciaCal {
+  text-align: center;
 }
-.react-calendar__month-view__weekdays{/*dias en la parte de arriba */
-    font-size: 20px;
+
+.calendar-component {
+  min-width: 35vw;
+  max-width: 1000px;
+  margin-top: 5%;
 }
-.react-calendar__month-view__days__day { /*dias del mes */
-    font-size: 25px;   
-    color: #222;    
+
+.react-calendar__navigation button {
+  font-size: 150%;
+}
+.react-calendar__month-view__weekdays {
+  font-size: 100%;
+}
+.react-calendar__month-view__days__day {
+  font-size: 120%;   
+  color: #222;    
 }
 .react-calendar__tile--now {
-    background-color: #c5c5c5;
+  background-color: #c5c5c5;
 }
 .react-calendar__tile--active {
-    background-color: #939393 !important;
+  background-color: #939393 !important;
 }
-.react-calendar__tile--now:hover {
-    background-color: #c5c5c5 !important;
-}
+.react-calendar__tile--now:hover,
 .react-calendar__tile--active:hover {
-    background-color: #939393 !important;
+
 }
-.Asistencia_text{
+
+.Registro_text {
+  text-align: center;
+}
+
+.Contenedor_Ingreso {
+  background-color: #E3E3E3;
+  padding: 10%;
+  margin-top: 5%;
+  border-radius: 1rem;
+  min-width: 35vw;
+  max-width: 1000px;
+  min-height: 21vw;
+  font-size: 70%;
+}
+
+.ingreso_hora {
+  margin-bottom: 5%;
+  width: 90%;
+}
+
+.Subir_ingreso {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #21947D;
+  color: #000;
+  cursor: pointer;
+}
+
+.tabla-resumen {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f8fffd; 
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border: 5px solid #d9e6e2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-resumen th,
+.tabla-resumen td {
+  padding: 12px;
+  border-bottom: 1px solid #e0f2ee;
+}
+
+.tabla-resumen thead {
+  background-color: #f1fffc;
+  font-weight: bold;
+}
+
+/* Tablets */
+
+@media (max-width: 1024px) {
+  .contenedor1 {
+    margin-left: 5vw;
+    gap: 5%;
+  }
+  .calendar-component,
+  .Contenedor_Ingreso {
+    min-width: 50vw;
+  }
+  .Contenedor_Ingreso {
+    padding: 8%;
+    font-size: 75%;
+  }
+  .ingreso_hora {
+    width: 95%;
+  }
+  .tabla-resumen {
+    max-width: 90vw;
+  }
+}
+
+/* celulares */
+
+@media (max-width: 768px) {
+  .contenedor1 {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    display: grid;
-    font-size: 25px;
-    margin-top: -400px;
-    margin-left: 100px;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .calendar-component {
+    min-width: 90vw;
+    margin-top: 5%;
+  }
+
+  .Contenedor_Ingreso {
+    min-width: 90vw;
+    padding: 10%;
+    font-size: 80%;
+    margin-top: 5%;
+  }
+
+  .ingreso_hora {
+    width: 100%;
+  }
+
+  .Subir_ingreso {
+    width: 100%;
+  }
+
+  .tabla-resumen {
+    max-width: 95vw;
+    font-size: 0.9rem;
+  }
+
+  .tabla-resumen th,
+  .tabla-resumen td {
+    padding: 8px;
+  }
+
+  .Registro_text,
+  .AsistenciaCal h1 {
+    font-size: 1.2rem;
+  }
 }
-.Reporte_buttom{
-    height: fit-content;
-    margin-left: 400px;
-    margin-top: 25px;
-    /* margin-right: 95px; */
-    background-color: #c5c5c5;
-    border-radius: 15px;
-    padding: 15px;
-    cursor: pointer;
-}
-.Reporte_buttom:hover{
-    background-color: #d6d6d6;
-}
-.Report_box{
-    text-align: center;
-    margin-top: 120px;
-    margin-left: -325px;
-    margin-right: 80px;
-    background-color: #c5c5c5;
-    height: 300px;
-    width: 400px;
-    border-radius: 15px;
-}
-.Report_text{
-    margin-top: 40px;
-    color: #000000;
-
-}
-.hora_inp{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
