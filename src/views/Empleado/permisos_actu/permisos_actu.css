@@ -18,7 +18,6 @@
 
 @media (max-width: 1000px) {
     .btn_actu {
-        background-color: #78e221;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -29,7 +28,6 @@
 
 @media (max-width: 800px) {
     .btn_actu {
-        background-color: #2CBA7A;
         grid-template-columns: repeat(2, 1fr);
     }
 

@@ -1,10 +1,9 @@
 
+import Menu from "../../../components/menu/menu";
 import "./contrat.css";
-import React from "react";
 const Contrato = () => {
     return (
         <>
-    
     <div className="container-contrato">
     <div className="campo-item">
         
@@ -47,7 +46,7 @@ const Contrato = () => {
     </div>
     </div>
 
-    </>
+    </> 
     );
 }
 export default Contrato;

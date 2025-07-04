@@ -1,7 +1,6 @@
-import Menu from '../../../components/menu/menu';
 import './formu.css';
 import { useForm } from 'react-hook-form';
-
+import { Link } from 'react-router-dom';
 
 export const Formulario = () => {
 
@@ -15,75 +14,85 @@ export const Formulario = () => {
         <>
           
             <section className='Contenedor_Principal'>
-                
+                <header className='encabezado'>
+                    <h1 className="titulo_principal">Añadir empleado</h1>
+                </header>
 
-                    <section className="Contenedor_Formulario">
+                <section className="Contenedor_Formulario">
 
-                        <form className="formulario" onSubmit={handleSubmit(enviar)}>
-                            <h1 className="main_title"> Datos personales: </h1>
+                    <form className="formulario" onSubmit={handleSubmit(enviar)}>
+                        <h1 className="main_title"> Datos personales: </h1>
 
-                            <div>
+                        <div>
 
                         </div>
                         
                         <div className='cont_input'>
-                            <label for="nomb" className='sub_titulos'> NOMBRES: </label>
+                            <label htmlFor ="nomb" className='sub_titulos'> NOMBRES: </label>
                             <input id="nomb" className='inputs' type="text" placeholder="" {...register(" NOMBRES1 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "cel" className='sub_titulos'> CELULAR: </label>
+                            <label htmlFor = "cel" className='sub_titulos'> CELULAR: </label>
                             <input id="cel" className='inputs' type="number" placeholder="" {...register(" CELULAR1 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "ape_1" className='sub_titulos'> APELLIDO 1: </label>
+                            <label htmlFor = "ape_1" className='sub_titulos'> APELLIDO 1: </label>
                             <input id = "ape_1" className='inputs' type="text" placeholder="" {...register(" APELLIDO1 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "ape_2" className='sub_titulos'> APELLIDO 2: </label>
+                            <label htmlFor = "ape_2" className='sub_titulos'> APELLIDO 2: </label>
                             <input id = "ape_2" className='inputs' type="text" placeholder="" {...register(" APELLIDO2 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "eps" className='sub_titulos'> EPS: </label>
+                            <label htmlFor = "eps" className='sub_titulos'> EPS: </label>
                             <input id = "eps" className='inputs' type="text" placeholder="" {...register(" EPS ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "arl" className='sub_titulos'> ARL: </label>
+                            <label htmlFor = "arl" className='sub_titulos'> ARL: </label>
                             <input id = "arl" className='inputs' type="text" placeholder="" {...register(" ARL ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "rh" className='sub_titulos'> RH: </label>
+                            <label htmlFor = "rh" className='sub_titulos'> RH: </label>
                             <input id = "rh" className='inputs' type="text" placeholder="" {...register(" RH1 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "dir" className='sub_titulos'> DIRECCION: </label>
+                            <label htmlFor = "dir" className='sub_titulos'> DIRECCION: </label>
                             <input id = "dir" className='inputs' type="text" placeholder="" {...register(" DIRECCION")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "est_civil" className='sub_titulos'> ESTADO CIVIL: </label>
+                            <label htmlFor = "est_civil" className='sub_titulos'> ESTADO CIVIL: </label>
                             <input id = "est_civil" className='inputs' type="text" placeholder="" {...register(" ESTADO CIVIL ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "tipo_doc" className='sub_titulos'> TIPO DE DOCUMENTO: </label>
+                            <label htmlFor = "tipo_doc" className='sub_titulos'> TIPO DE DOCUMENTO: </label>
                             <input id = "tipo_doc" className='inputs' type="text" placeholder="" {...register(" TIPO_DOC ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "num_doc" className='sub_titulos'> NUMERO DE DOCUMENTO: </label>
+                            <label htmlFor = "num_doc" className='sub_titulos'> NUMERO DE DOCUMENTO: </label>
                             <input id = "num_doc" className='inputs' type="number" placeholder="" {...register(" NUM_DOC ")} />
                         </div>
 
-                            <div>
+                        <div className='cont_input'>
+                            <label htmlFor = "grupo_sanguineo" className='sub_titulos'> GRUPO SANGUINEO: </label>
+                            <input id = "grupo_sanguineo" className='inputs' type="text" placeholder="" {...register(" GRUPO SANGUINEO ")} />
+                        </div>
 
-                            </div>
+
+                        <h1 className="TITULO_2"> DATOS DE CONTRATO </h1>
+
+                        <div>
+
+                        </div>
 
                         <div className='cont_input'>
                             <label htmlFor = "fecha_inicio" className='sub_titulos'> FECHA INICIO: </label>
@@ -124,44 +133,54 @@ export const Formulario = () => {
                             
                         </div>
 
-                            <h1 className="TITULO_2"> CONTACTO EMERGENCIA </h1>
+                        <h1 className="TITULO_2"> CONTACTO EMERGENCIA </h1>
 
-                            <div>
+                        <div>
 
-                            </div>
+                        </div>
 
                         <div className='cont_input'>
-                            <label for = "nom2" className='sub_titulos'> NOMBRES: </label>
+                            <label htmlFor = "nom2" className='sub_titulos'> NOMBRES: </label>
                             <input id = "nom2" className='inputs' type="text" placeholder="" {...register(" NOMBRES2 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "cel2" className='sub_titulos'> CELULAR: </label>
+                            <label htmlFor = "cel2" className='sub_titulos'> CELULAR: </label>
                             <input id = "cel2" className='inputs' type="number" placeholder="" {...register(" CELULAR2 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "ape_1.2" className='sub_titulos'> APELLIDO 1: </label>
+                            <label htmlFor = "ape_1.2" className='sub_titulos'> APELLIDO 1: </label>
                             <input id = "ape_1.2" className='inputs' type="text" placeholder="" {...register(" APELLIDO3  ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "ape_2.2" className='sub_titulos'> APELLIDO 2: </label>
+                            <label htmlFor = "ape_2.2" className='sub_titulos'> APELLIDO 2: </label>
                             <input id = "ape_2.2" className='inputs' type="text" placeholder="" {...register(" APELLIDO4 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "rh" className='sub_titulos'> RH: </label>
+                            <label htmlFor = "rh" className='sub_titulos'> RH: </label>
                             <input id = "rh" className='inputs' type="text" placeholder="" {...register(" RH2 ")} />
                         </div>
 
                         <div className='cont_input'>
-                            <label for = "parentesco" className='sub_titulos'> PARENTESCO: </label>
+                            <label htmlFor = "parentesco" className='sub_titulos'> PARENTESCO: </label>
                             <input id = "parentesco" className='inputs' type="text" placeholder="" {...register(" PARENTESCO ")} />
                         </div>
 
                     </form>
                 </section>
+                <div className='Contenedor_Botones'>
+                    <Link to="/home/employe">
+                        <div className='boton_cancelar'>
+                            <h1 className='texto_boton_cancelar'> Cancelar </h1>
+                        </div>
+                    </Link>
+                    <div className='boton_anadir'>
+                        <h1 className='texto_boton_anadir'> Añadir </h1>
+                    </div>
+                </div>
             </section>
         </>
     )
