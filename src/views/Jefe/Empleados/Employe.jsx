@@ -1,10 +1,10 @@
-<<<<<<< HEAD:src/components/Components_employe/Employe.jsx
-import search from './../../assets/icons/lupa.svg'
-//import '../../styles/styles_home/table_employe.css'
-=======
+
+//import search from './../../assets/icons/lupa.svg'
+
+
 
 import './table_employe.css'
->>>>>>> contrat:src/views/Jefe/Empleados/Employe.jsx
+
 
 const Employe = () => {
     return (
