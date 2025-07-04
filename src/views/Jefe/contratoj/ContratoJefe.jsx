@@ -1,0 +1,53 @@
+
+import "./contratoJefe.css";
+import React from "react";
+const ContratoJefe = () => {
+    return (
+        <>
+    
+    <div className="container-contrato">
+    <div className="campo-item">
+        
+        <label className="campo-label">SALARIO</label>
+    <input className="campo-editor"></input>
+    </div>
+
+    <div className="container-descargar-contrato">
+        <button className="boton-descargar">DESCARGAR<br />CONTRATO</button>
+    </div>
+
+    <div className="campo-item">
+        <label className="campo-label">FECHA INICIO</label>
+        <input className="campo-editor"></input>
+    </div>
+
+    <div className="campo-item">
+        <label className="campo-label">FECHA FIN</label>
+        <input className="campo-editor"></input>
+    </div>
+
+    <div className="campo-item">
+        <label className="campo-label">ESTADO</label>
+        <input className="campo-editor"></input>
+    </div>
+
+    <div className="campo-item">
+        <label className="campo-label">HORARIO</label>
+        <input className="campo-editor"></input>
+    </div>
+
+    <div className="campo-item "> 
+        <label className="campo-label">TIPO DE CONTRATO</label>
+        <input className="campo-editor"></input>
+    </div>
+
+    <div className="campo-item "> 
+        <label className="campo-label">HISTORIAL</label>
+        <input className="campo-editor"></input>
+    </div>
+    </div>
+
+    </>
+    );
+}
+export default ContratoJefe;
