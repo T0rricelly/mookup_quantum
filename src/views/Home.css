@@ -1,9 +1,12 @@
 .contenedor{
     display: flex;
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
 }
 
 .CONTENIDO{
     width: 100%;
-    
+<<<<<<< HEAD:src/styles/styles_home/Home.css
+
+=======
+>>>>>>> master:src/views/Home.css
 }
