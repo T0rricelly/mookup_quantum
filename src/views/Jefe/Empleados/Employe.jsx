@@ -1,5 +1,5 @@
-import search from './../../assets/icons/lupa.svg'
-import './../../styles/styles_employe/employe.css'
+
+import './table_employe.css'
 
 const Employe = () => {
     return (
@@ -9,7 +9,7 @@ const Employe = () => {
                     <h1 className="titulo_ini">Empleados</h1>
                     <article className='buscar_container'>
                         <input type="text" placeholder='buscar' className='buscar' />
-                        <img className='lupa' src={search} alt="" />
+                        <img className='lupa' src="" alt="" />
                     </article>
                 </nav>
 
