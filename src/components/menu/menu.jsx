@@ -11,54 +11,51 @@ export const Menu = () => {
   const name = "Sena"
   return (
     <>
-      <ul className='menu'>
-        <div className="block_up">
-          <li className="info">
-            <div className="info_inicial ">{name.charAt(0)}</div>
-            <p className="info_nombre">{name}</p>
-          </li>
+      <section className="menu">
 
-          <li className='text_menu'>
+        <div className="block_up">
+        <section className='menu_info'>
+          <div className="info_inicial ">{name.charAt(0)}</div>
+          <p className="info_nombre">{name}</p>
+        </section>
+
+
+          <Link to="/home" className='block_link'>
             <img src={Dash} alt="Casa" />
-            <Link to="/home">
-              <span>INICIO</span>
-            </Link>
-          </li>
-          <li className='text_menu'>
+            <span>Inicio </span>
+          </Link>
+
+
+          <Link to="/home/assistance" className='block_link'>
             <img src={Cal} alt="Calendario" />
-            <Link to="/home/assistance">
-              <span>ASISTENCIA</span>
-            </Link>
-          </li>
-          <li className='text_menu'>
+            <span>Asistencia </span>
+          </Link>
+
+          <Link to="/home/contrat" className='block_link'>
             <img src={Contrat} alt="Hoja" />
-            <Link to="/home/contrat">
-              <span>CONTRATO</span>
-            </Link>
-          </li>
-          <li className='text_menu'>
+            <span>Contrato </span>
+          </Link>
+
+          <Link to="/home/permisos" className='block_link'>
             <img src={Check} alt="Check" />
-            <Link to="/home/permisos">
-              <span>PERMISOS</span>
-            </Link>
-          </li>
+            <span>Permiso </span>
+          </Link>
         </div>
         <div className="block_down">
-          <li className='text_menu'>
+
+          <Link to="/home/employe" className='block_link'>
             <img src={Help} alt="Empleado" />
-            <Link to="/home/employe">
-              <span>Terminos y condiciones</span>
-            </Link>
-          </li>
-          <li className='text_menu'>
+            <span>Terminos y condiciones </span>
+          </Link>
+
+
+          <Link to="/home/" className='block_link'>
             <img src={Logout} alt="Empleado" />
-            <Link to="/home/employe">
-              <span>Salir de tu cuenta</span>
-            </Link>
-          </li>
+            <span>Salir de tu cuenta </span>
+          </Link>
 
         </div>
-      </ul>
+      </section>
     </>
   );
 };
