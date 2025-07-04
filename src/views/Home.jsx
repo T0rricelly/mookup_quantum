@@ -34,7 +34,7 @@ export const Home = () => {
             <Route path="assistance" element={<Calendarp />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="employe" element={<Employe />} />
-            <Route path="contrato" element={<Contrato />} />
+            <Route path="contrat" element={<Contrato />} />
             <Route path="contratoJefe" element={<Contratoj />} />
           </Routes>
         </main>

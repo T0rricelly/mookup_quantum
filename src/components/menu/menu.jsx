@@ -34,7 +34,7 @@ export const Menu = () => {
           </Link>
           <Link to="/home/assistance" className="block_link">
             <img src={Cal} alt="Calendario" />
-            <span>Calendario</span>
+            <span>Asistencia</span>
           </Link>
           <Link to="/home/contrato" className="block_link">
             <img src={Contrat} alt="Contrato" />
