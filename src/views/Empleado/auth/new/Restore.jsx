@@ -1,5 +1,3 @@
-import HeaderAuth from './Header_Auth';
-import Footer from './footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
@@ -51,7 +49,6 @@ export const Restore = () => {
     }
     return (
         <>
-            <HeaderAuth />
             <h2 className="main__title">Restablecer contraseña</h2>
             <main className="main">
                 <form action="post" className="main__form">
@@ -70,7 +67,6 @@ export const Restore = () => {
                 <button type='submit' onClick={cancel} className="main__btnCancel">Cancelar</button>
                 <button type='submit' onClick={next} className="main__btnNext">Siguiente</button>
             </main>
-            <Footer />
             <ToastContainer
                 position="top-right"
                 autoClose={5000}

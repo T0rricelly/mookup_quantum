@@ -7,11 +7,10 @@
 .header_home {
     display: flex;
     align-items: center;
-    padding: 16px;
-    padding-left: 20px;
-    background-color: #EFEFEF;
+    background-color: #FFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
+    padding: 10px 40px;
 }
 
 /* .imagen{
@@ -22,24 +21,12 @@
     height: 65px;
 }
 
-/* .rol{
-    width: 50%;
-} */
-.buttons {
-    width: 30%;
-    margin-left: 100px;
-    display: flex;
-    justify-content: space-around;
-}
-
 .btn_cuenta {
     text-decoration: none;
     color: black;
     border: none;
     border-radius: 1em;
     padding: 10px 25px 10px 25px;
-    /* padding-right: 30px; */
-    /* padding-left: 30px; */
     font-size: 18px;
     align-items: center;
     background-color: #d9d9d9;

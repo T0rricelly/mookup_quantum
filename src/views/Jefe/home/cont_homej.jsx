@@ -1,4 +1,4 @@
-import "./Cont_home.css";
+import "./Cont_homej.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 const name = "Santiago";
@@ -60,23 +60,23 @@ export const Cont_home = () => {
             <section className="sub_mid_left">
               <Link to="/home/assistance">
                 <article className="asis">
-                  <h3 className="titulos">Asistencia</h3>
+                  <h3 className="titulos">Asistencia Empleados</h3>
                 </article>
               </Link>
 
               <Link to="/home/permisos">
                 <article className="permi">
-                  <h3 className="titulos">Permisos</h3>
+                  <h3 className="titulos">Solicitudes Permisos</h3>
                 </article>
               </Link>
             </section>
 <section className="sub_mid_rigth">
  <article className="ausencias">
-              <h3 className="titulos">Ausencias</h3>
+              <h3 className="titulos">Ausencias Empleados</h3>
             </article>
             <Link to="/home/contrat">
               <article className="contrato">
-                <h3 className="titulos">Contrato</h3>
+                <h3 className="titulos">Contratos</h3>
               </article>
             </Link>
             <article className="tmp_tra">
