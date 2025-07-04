@@ -1,5 +1,5 @@
 import search from './../../assets/icons/lupa.svg'
-import './../../styles/styles_employe/employe.css'
+//import '../../styles/styles_home/table_employe.css'
 
 const Employe = () => {
     return (
