@@ -9,6 +9,10 @@ import Logout from './../../assets/icons/logout.svg';
 
 export const Menu = () => {
   const name = "Sena"
+  const logOut = () => {
+    window.location.href = '/login';
+    localStorage.removeItem('logged'); 
+  }
   return (
     <>
       <section className="menu">
@@ -20,25 +24,21 @@ export const Menu = () => {
         </section>
 
 
-          <Link to="/home" className='block_link'>
-            <img src={Dash} alt="Casa" />
-            <span>Inicio </span>
+          <Link to="/home" className="block_link">
+            <img src={Dash} alt="Dashboard" />
+            <span>Dashboard</span>
           </Link>
-
-
-          <Link to="/home/assistance" className='block_link'>
+          <Link to="/home/permisos" className="block_link">
+            <img src={Check} alt="Permisos" />
+            <span>Permisos</span>
+          </Link>
+          <Link to="/home/assistance" className="block_link">
             <img src={Cal} alt="Calendario" />
-            <span>Asistencia </span>
+            <span>Calendario</span>
           </Link>
-
-          <Link to="/home/contrat" className='block_link'>
-            <img src={Contrat} alt="Hoja" />
-            <span>Contrato </span>
-          </Link>
-
-          <Link to="/home/permisos" className='block_link'>
-            <img src={Check} alt="Check" />
-            <span>Permiso </span>
+          <Link to="/home/contrato" className="block_link">
+            <img src={Contrat} alt="Contrato" />
+            <span>Contrato</span>
           </Link>
         </div>
         <div className="block_down">
@@ -49,7 +49,7 @@ export const Menu = () => {
           </Link>
 
 
-          <Link to="/home/" className='block_link'>
+          <Link onClick={logOut} className='block_link'>
             <img src={Logout} alt="Empleado" />
             <span>Salir de tu cuenta </span>
           </Link>

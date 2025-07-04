@@ -1,7 +1,7 @@
 import quantumLogo from './../../assets/images/quantum_logo.png';
 import './header_home.css';
 export const Header = () => {
-  const user = "Jefe"
+  const user = "Empleado"
   const account = () => {
     window.location.href = '/home/cuenta';
   }
