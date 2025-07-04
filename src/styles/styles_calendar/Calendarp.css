@@ -1,17 +1,10 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  gap: 20px;
-}
 
 .contenedor1 {
   background-color: #fff;
-  display: flex;
-  gap: 10%;
-  margin-left: 15vw;
-  flex-wrap: wrap;
-  margin-bottom: 3%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+  padding: 30px;
 }
 
 .AsistenciaCal {
@@ -19,9 +12,7 @@
 }
 
 .calendar-component {
-  min-width: 35vw;
-  max-width: 1000px;
-  margin-top: 5%;
+  width: 100%;
 }
 
 .react-calendar__navigation button {
@@ -42,7 +33,7 @@
 }
 .react-calendar__tile--now:hover,
 .react-calendar__tile--active:hover {
-
+  background-color: #21947D !important;
 }
 
 .Registro_text {
@@ -51,20 +42,25 @@
 
 .Contenedor_Ingreso {
   background-color: #E3E3E3;
-  padding: 10%;
-  margin-top: 5%;
+  padding: 30px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
   border-radius: 1rem;
-  min-width: 35vw;
-  max-width: 1000px;
-  min-height: 21vw;
+  width: 100%;
+  height:296px;
   font-size: 70%;
 }
 
 .ingreso_hora {
-  margin-bottom: 5%;
   width: 90%;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
 }
-
+.titus_calendar{
+  font-size: 15px;
+}
 .Subir_ingreso {
   display: block;
   margin: 0 auto;
@@ -102,16 +98,12 @@
   font-weight: bold;
 }
 
-/* Tablets */
+
 
 @media (max-width: 1024px) {
   .contenedor1 {
-    margin-left: 5vw;
+    margin-left: 5px;
     gap: 5%;
-  }
-  .calendar-component,
-  .Contenedor_Ingreso {
-    min-width: 50vw;
   }
   .Contenedor_Ingreso {
     padding: 8%;
@@ -119,9 +111,6 @@
   }
   .ingreso_hora {
     width: 95%;
-  }
-  .tabla-resumen {
-    max-width: 90vw;
   }
 }
 
@@ -170,3 +159,9 @@
     font-size: 1.2rem;
   }
 }
+
+
+
+/* Fija el menú a la izquierda y reserva espacio para el contenido */
+
+
