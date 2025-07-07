@@ -1,18 +1,18 @@
 // src/components_home/Calendarp.jsx
 import React from 'react';
-import Menu from './../menu/menu';
+import Menu from '../../../components/menu/menu';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import "../../styles/styles_calendar/Calendarp.css";
+import "./AsistenciaEm.css";
 
-export const Calendarp = () => {
+export const AsistenciaEm = () => {
   return (
     <div className="contenedor">
       <Menu />
 
       <main className="main-content">
         {/* Primer bloque */}
-        <section className='contenedor1'>
+        <div className='contenedor1'>
           <section className='AsistenciaCal'>
             <div><h1>ASISTENCIA</h1></div>
             <div><Calendar className="calendar-component" /></div>
@@ -22,14 +22,14 @@ export const Calendarp = () => {
             <div><h1 className='Registro_text'>REGISTRO DE ASISTENCIA</h1></div>
             <div>
               <section className='Contenedor_Ingreso'>
-                <nav>
+                <div>
                   <p className='titus_calendar'>HORA INGRESO</p>
                   <input type='text' className='ingreso_hora' />
-                </nav>
-                <nav>
+                </div>
+                <div>
                   <p className='titus_calendar'>HORA SALIDA</p>
                   <input type='text' className='ingreso_hora' />
-                </nav>
+                </div>
 
                 <button className='Subir_ingreso'>SUBIR</button>
               </section>
@@ -67,10 +67,10 @@ export const Calendarp = () => {
               </section>
             </div>
           </section>
-        </section>
+        </div>
       </main>
     </div>
   );
 };
 
-export default Calendarp;
+export default AsistenciaEm;
