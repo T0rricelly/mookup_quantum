@@ -3,16 +3,13 @@
   width: 80%;
   margin: auto;
 }
+
 .header_perm_regis {
   display: grid;
   grid-template-columns: 80% 20%;
   align-items: center;
 }
-.header_perm_regis{
-    display: grid;
-    grid-template-columns: 70% 30%;
 
-}
 #regre {
   height: 68px;
   border-radius: 5px;

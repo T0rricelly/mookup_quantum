@@ -1,0 +1,168 @@
+
+.contenedor1 {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+  padding: 30px;
+  width: 95%;
+  margin:2% auto;
+}
+
+.AsistenciaCal {
+  text-align: center;
+}
+
+.calendar-component {
+  width: 100%;
+}
+
+.react-calendar__navigation button {
+  font-size: 150%;
+}
+.react-calendar__month-view__weekdays {
+  font-size: 100%;
+}
+.react-calendar__month-view__days__day {
+  font-size: 120%;   
+  color: #222;    
+}
+.react-calendar__tile--now {
+  background-color: #c5c5c5;
+}
+.react-calendar__tile--active {
+  background-color: #939393 !important;
+}
+.react-calendar__tile--now:hover,
+.react-calendar__tile--active:hover {
+  background-color: #21947D !important;
+}
+
+.Registro_text {
+  text-align: center;
+}
+
+.Contenedor_Ingreso {
+  background-color: #E3E3E3;
+  padding: 30px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  width: 100%;
+  height:296px;
+  font-size: 70%;
+}
+
+.ingreso_hora {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
+}
+.titus_calendar{
+  font-size: 15px;
+}
+.Subir_ingreso {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #21947D;
+  color: #000;
+  cursor: pointer;
+}
+
+.tabla-resumen {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #e2e2e2; 
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border: 5px solid #d9e6e2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-resumen th,
+.tabla-resumen td {
+  padding: 12px;
+  border-bottom: 1px solid #e0f2ee;
+}
+
+.tabla-resumen thead {
+  background-color: #f1fffc;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 1024px) {
+  .contenedor1 {
+    margin-left: 5px;
+    gap: 5%;
+  }
+  .Contenedor_Ingreso {
+    padding: 8%;
+    font-size: 75%;
+  }
+  .ingreso_hora {
+    width: 95%;
+  }
+}
+
+/* celulares */
+
+@media (max-width: 768px) {
+  .contenedor1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .calendar-component {
+    min-width: 90vw;
+    margin-top: 5%;
+  }
+
+  .Contenedor_Ingreso {
+    min-width: 90vw;
+    padding: 10%;
+    font-size: 80%;
+    margin-top: 5%;
+  }
+
+  .ingreso_hora {
+    width: 100%;
+  }
+
+  .Subir_ingreso {
+    width: 100%;
+  }
+
+  .tabla-resumen {
+    max-width: 95vw;
+    font-size: 0.9rem;
+  }
+
+  .tabla-resumen th,
+  .tabla-resumen td {
+    padding: 8px;
+  }
+
+  .Registro_text,
+  .AsistenciaCal h1 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+

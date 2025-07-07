@@ -1,6 +1,7 @@
 import "./Cont_homej.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 export const Cont_home = () => {
   const name = 'Jefe';
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
@@ -58,21 +59,26 @@ export const Cont_home = () => {
           </article>
           <section className="sub_mid">
             <section className="sub_mid_left">
-              <Link to="/home/assistance">
+              <Link to="/home/assistance_emp">
                 <article className="asis">
                   <h3 className="titulos">Asistencia Empleados</h3>
                 </article>
               </Link>
 
               <Link to="/home/permisos">
-                <article className="permi">
+                <article className="permi_emp">
                   <h3 className="titulos">Solicitudes Permisos</h3>
                 </article>
               </Link>
             </section>
-            <section className="sub_mid_rigth">
-              <article className="ausencias">
-                <h3 className="titulos">Ausencias Empleados</h3>
+
+<section className="sub_mid_rigth">
+ <article className="ausencias_emp">
+              <h3 className="titulos">Ausencias Empleados</h3>
+            </article>
+            <Link to="/home/empleados">
+              <article className="emp">
+                <h3 className="titulos">Empleados</h3>
               </article>
               <Link to="/home/employeJefe">
                 <article className="contrato">
@@ -90,4 +96,4 @@ export const Cont_home = () => {
     </>
   );
 };
-export default Cont_home;
+export default Cont_homej;
