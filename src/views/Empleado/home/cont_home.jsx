@@ -1,8 +1,9 @@
 import "./Cont_home.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-const name = "Santiago";
-export const Cont_home = () => {
+// import { handleData } from "../auth/login/content_login";
+export const Cont_homeJefe = () => {
+  // const name = handleData().name;
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
   const [fechaActual, setFechaActual] = useState(new Date());
   /*Fecha Actual*/
@@ -90,4 +91,4 @@ export const Cont_home = () => {
     </>
   );
 };
-export default Cont_home;
+export default Cont_homeJefe;

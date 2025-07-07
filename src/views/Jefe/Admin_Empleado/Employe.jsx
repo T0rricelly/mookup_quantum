@@ -5,7 +5,7 @@ import cancel from '../../../../src/assets/icons/Cancel.svg'
 import { Link } from 'react-router-dom'
 import './employe.css'
 
-const Employe = () => {
+const EmployeJefe = () => {
     return (
         <>
             <section className="contenedor_admin_empleado">
@@ -45,4 +45,4 @@ const Employe = () => {
     )
 }
 
-export default Employe
+export default EmployeJefe

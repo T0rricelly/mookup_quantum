@@ -1,8 +1,9 @@
 import "./Cont_homej.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-const name = "Santiago";
-export const Cont_homej = () => {
+
+export const Cont_home = () => {
+  const name = 'Jefe';
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
   const [fechaActual, setFechaActual] = useState(new Date());
   /*Fecha Actual*/
@@ -70,6 +71,7 @@ export const Cont_homej = () => {
                 </article>
               </Link>
             </section>
+
 <section className="sub_mid_rigth">
  <article className="ausencias_emp">
               <h3 className="titulos">Ausencias Empleados</h3>
@@ -78,12 +80,16 @@ export const Cont_homej = () => {
               <article className="emp">
                 <h3 className="titulos">Empleados</h3>
               </article>
-            </Link>
-            <article className="tmp_tra">
-              <h3 className="titulos">Tiempo Trabajado</h3>
-            </article>
-</section>
-           
+              <Link to="/home/employeJefe">
+                <article className="contrato">
+                  <h3 className="titulos">Contratos</h3>
+                </article>
+              </Link>
+              <article className="tmp_tra">
+                <h3 className="titulos">Tiempo Trabajado</h3>
+              </article>
+            </section>
+
           </section>
         </section>
       </section>
