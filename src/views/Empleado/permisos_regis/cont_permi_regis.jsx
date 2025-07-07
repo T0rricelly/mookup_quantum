@@ -18,7 +18,7 @@ const Permi_regis = () => {
                             <button id='regre'>Regresar</button>
                         </Link>
                     </header>
-                    <section className='tabla_perm'>
+                    <section className='tabla_permisos'>
                         <table className="tabla_perm">
                             <thead className="head_tabla_perm">
                                 <tr>
