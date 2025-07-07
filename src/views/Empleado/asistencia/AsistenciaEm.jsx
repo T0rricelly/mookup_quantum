@@ -7,8 +7,6 @@ import "./AsistenciaEm.css";
 
 export const AsistenciaEm = () => {
   return (
-    <div className="contenedor">
-      <Menu />
 
       <main className="main-content">
         {/* Primer bloque */}
@@ -69,7 +67,6 @@ export const AsistenciaEm = () => {
           </section>
         </div>
       </main>
-    </div>
   );
 };
 

@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Hidden from './../../../assets/icons/hidden.svg'
 import Show from './../../../assets/icons/show.svg'
 import Select from 'react-select';
+import quantum from './../../../assets/images/quantum_logo.png'
+
 
 const idCardTest = '1031650532';
 const passwordTest = '1234567890';
@@ -41,7 +43,7 @@ export const Content_Login = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    if (!rol){
+    if (!rol) {
       emptyCamps();
       return;
     }
@@ -50,7 +52,7 @@ export const Content_Login = () => {
       localStorage.setItem('rol', rol);
       window.location.href = '/home';
 
-    } else if (idCard === '' || password === '' ) {
+    } else if (idCard === '' || password === '') {
       emptyCamps();
     } else {
       errorData();
@@ -85,58 +87,65 @@ export const Content_Login = () => {
     <>
 
       <main className='container'>
-        <div className="back_part">
+        <section className="back_part">
           <div className="gray"></div>
           <div className="white"></div>
-        </div>
-        <form action="" className='container__form'>
-          <h2 className='container__title'>Login</h2>
-          <label htmlFor="id_card" className='container__label'>Numero de documento</label>
-          <input
-            type="text"
-            className='container__input'
-            placeholder='Ingrese su cedula'
-            name='id_card'
-            onChange={handleIdCard}
-            required />
-          <label htmlFor="password" className='container__label'>Contraseña</label>
-          <div className="container__group">
-            <input
-              type={showPass ? "text" : "password"}
-              className='container__input container__input--pass'
-              placeholder='Ingrese su contraseña'
-              name='password'
-              onChange={handlePassword}
-              required />
-            {showPass ?
-              <img src={Show} className="container__svg"
-                onClick={() => {
-                  setShowPass(!showPass)
-                }} /> :
-              <img src={Hidden} className="container__svg"
-                onClick={() => {
-                  setShowPass(!showPass)
-                }} />}
-          </div>
-          <Select
-            className='container__select'
-            options={roles}
-            placeholder='Seleccione su rol'
-            value={
-              rol ?
-                { label: rol, value: rol }
-                : null}
-            onChange={handleData}
-          />
+        </section>
 
-          <button
-            type='submit'
-            onClick={submit}
-            className='container__submit'
-          >
-            Ingresar
-          </button>
-          <a href="/forgot" className='container__link'>Olvide mi contraseña</a>
+        <form action="" className='container__form'>
+          <nav className="container__image">
+            <img src={quantum} className='container__img' alt="Quantum" />
+          </nav>
+          <section className="form">
+
+            <h2 className='container__title'>Login</h2>
+            <label htmlFor="id_card" className='container__label'>Numero de documento</label>
+            <input
+              type="text"
+              className='container__input'
+              placeholder='Ingrese su cedula'
+              name='id_card'
+              onChange={handleIdCard}
+              required />
+            <label htmlFor="password" className='container__label'>Contraseña</label>
+            <div className="container__group">
+              <input
+                type={showPass ? "text" : "password"}
+                className='container__input container__input--pass'
+                placeholder='Ingrese su contraseña'
+                name='password'
+                onChange={handlePassword}
+                required />
+              {showPass ?
+                <img src={Show} className="container__svg"
+                  onClick={() => {
+                    setShowPass(!showPass)
+                  }} /> :
+                <img src={Hidden} className="container__svg"
+                  onClick={() => {
+                    setShowPass(!showPass)
+                  }} />}
+            </div>
+            <Select
+              className='container__select'
+              options={roles}
+              placeholder='Seleccione su rol'
+              value={
+                rol ?
+                  { label: rol, value: rol }
+                  : null}
+              onChange={handleData}
+            />
+
+            <button
+              type='submit'
+              onClick={submit}
+              className='container__submit'
+            >
+              Ingresar
+            </button>
+            <a href="/forgot" className='container__link'>Olvide mi contraseña</a>
+          </section>
         </form>
       </main>
       <ToastContainer

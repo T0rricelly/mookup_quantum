@@ -32,62 +32,63 @@ export const Cont_homeJefe = () => {
   }, []);
   return (
     <>
-      <section className="cont_home">
-        <section className="asides">
-          <aside className="saludo">
-            <p>
-              HOLA:
-              <br />
-              {name}
-              <br />
-              <br />
-              !BIENVENID@!
-              <nav className="fecha_hora">
-                <h3>{fechaText}</h3>
-                <h4 id="hora">{horaActual}</h4>
-              </nav>
-            </p>
-          </aside>
-          <aside className="noti">
-            <h3 className="titu_noti">Notificaciones</h3>
-          </aside>
-        </section>
 
-        <section className="mid">
-          <article className="historial">
-            <h3 className="titulos titulo_histo">Historial de Asistencia</h3>
-          </article>
-          <section className="sub_mid">
-            <section className="sub_mid_left">
-              <Link to="/home/assistance">
-                <article className="asis">
-                  <h3 className="titulos">Asistencia</h3>
-                </article>
-              </Link>
+        <section className="cont_home">
+          <section className="asides">
+            <aside className="saludo">
+              <p>
+                HOLA:
+                <br />
+                {name}
+                <br />
+                <br />
+                !BIENVENID@!
+                <nav className="fecha_hora">
+                  <h3>{fechaText}</h3>
+                  <h4 id="hora">{horaActual}</h4>
+                </nav>
+              </p>
+            </aside>
+            <aside className="noti">
+              <h3 className="titu_noti">Notificaciones</h3>
+            </aside>
+          </section>
 
-              <Link to="/home/permisos">
-                <article className="permi">
-                  <h3 className="titulos">Permisos</h3>
+          <section className="mid">
+            <article className="historial">
+              <h3 className="titulos titulo_histo">Historial de Asistencia</h3>
+            </article>
+            <section className="sub_mid">
+              <section className="sub_mid_left">
+                <Link to="/home/assistance">
+                  <article className="asis">
+                    <h3 className="titulos">Asistencia</h3>
+                  </article>
+                </Link>
+
+                <Link to="/home/permisos">
+                  <article className="permi">
+                    <h3 className="titulos">Permisos</h3>
+                  </article>
+                </Link>
+              </section>
+              <section className="sub_mid_rigth">
+                <article className="ausencias">
+                  <h3 className="titulos">Ausencias</h3>
                 </article>
-              </Link>
+                <Link to="/home/contrat">
+                  <article className="contrato">
+                    <h3 className="titulos">Contrato</h3>
+                  </article>
+                </Link>
+                <article className="tmp_tra">
+                  <h3 className="titulos">Tiempo Trabajado</h3>
+                </article>
+              </section>
+
             </section>
-<section className="sub_mid_rigth">
- <article className="ausencias">
-              <h3 className="titulos">Ausencias</h3>
-            </article>
-            <Link to="/home/contrat">
-              <article className="contrato">
-                <h3 className="titulos">Contrato</h3>
-              </article>
-            </Link>
-            <article className="tmp_tra">
-              <h3 className="titulos">Tiempo Trabajado</h3>
-            </article>
-</section>
-           
           </section>
         </section>
-      </section>
     </>
   );
 };

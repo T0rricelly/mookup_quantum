@@ -1,8 +1,9 @@
 import "./Cont_homej.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Menu from "../../../components/menu/menu";
 
-export const Cont_home = () => {
+export const Cont_homej = () => {
   const name = 'Jefe';
   const [horaActual, setHoraActual] = useState(new Date().toLocaleTimeString());
   const [fechaActual, setFechaActual] = useState(new Date());
@@ -32,67 +33,71 @@ export const Cont_home = () => {
   }, []);
   return (
     <>
-      <section className="cont_home">
-        <section className="asides">
-          <aside className="saludo">
-            <p>
-              HOLA:
-              <br />
-              {name}
-              <br />
-              <br />
-              !BIENVENID@!
-              <nav className="fecha_hora">
-                <h3>{fechaText}</h3>
-                <h4 id="hora">{horaActual}</h4>
-              </nav>
-            </p>
-          </aside>
-          <aside className="noti">
-            <h3 className="titu_noti">Notificaciones</h3>
-          </aside>
-        </section>
+      <section className="contenedor">
+        <Menu />
+        <section className="cont_home">
+          <section className="asides">
+            <aside className="saludo">
+              <p>
+                HOLA:
+                <br />
+                {name}
+                <br />
+                <br />
+                !BIENVENID@!
+                <nav className="fecha_hora">
+                  <h3>{fechaText}</h3>
+                  <h4 id="hora">{horaActual}</h4>
+                </nav>
+              </p>
+            </aside>
+            <aside className="noti">
+              <h3 className="titu_noti">Notificaciones</h3>
+            </aside>
+          </section>
 
-        <section className="mid">
-          <article className="historial">
-            <h3 className="titulos titulo_histo">Historial de Asistencia</h3>
-          </article>
-          <section className="sub_mid">
-            <section className="sub_mid_left">
-              <Link to="/home/assistance_emp">
-                <article className="asis">
-                  <h3 className="titulos">Asistencia Empleados</h3>
-                </article>
-              </Link>
-
-              <Link to="/home/permisos">
-                <article className="permi_emp">
-                  <h3 className="titulos">Solicitudes Permisos</h3>
-                </article>
-              </Link>
-            </section>
-
-<section className="sub_mid_rigth">
- <article className="ausencias_emp">
-              <h3 className="titulos">Ausencias Empleados</h3>
+          <section className="mid">
+            <article className="historial">
+              <h3 className="titulos titulo_histo">Historial de Asistencia</h3>
             </article>
-            <Link to="/home/empleados">
-              <article className="emp">
-                <h3 className="titulos">Empleados</h3>
-              </article>
-              <Link to="/home/employeJefe">
-                <article className="contrato">
-                  <h3 className="titulos">Contratos</h3>
-                </article>
-              </Link>
-              <article className="tmp_tra">
-                <h3 className="titulos">Tiempo Trabajado</h3>
-              </article>
-            </section>
+            <section className="sub_mid">
+              <section className="sub_mid_left">
+                <Link to="/home/assistance_emp">
+                  <article className="asis">
+                    <h3 className="titulos">Asistencia Empleados</h3>
+                  </article>
+                </Link>
 
+                <Link to="/home/permisos">
+                  <article className="permi_emp">
+                    <h3 className="titulos">Solicitudes Permisos</h3>
+                  </article>
+                </Link>
+              </section>
+
+              <section className="sub_mid_rigth">
+                <article className="ausencias_emp">
+                  <h3 className="titulos">Ausencias Empleados</h3>
+                </article>
+                <Link to="/home/empleados">
+                  <article className="emp">
+                    <h3 className="titulos">Empleados</h3>
+                  </article>
+                </Link>
+                  <Link to="/home/employeJefe">
+                    <article className="contrato">
+                      <h3 className="titulos">Contratos</h3>
+                    </article>
+                  </Link>
+                  <article className="tmp_tra">
+                    <h3 className="titulos">Tiempo Trabajado</h3>
+                  </article>
+              </section>
+
+            </section>
           </section>
         </section>
-      </section>
+      </section >
     </>
   );
 };
