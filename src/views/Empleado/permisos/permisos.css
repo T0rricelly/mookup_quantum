@@ -46,7 +46,7 @@
 }
 
 .btn_perm,
-.btn_actu {
+.btn_actu{
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -55,6 +55,7 @@
 
 .btn_perm button,
 .btn_actu button,
+.btn_perm_sol button,
 #regre{
   width: 100%;
   height: 83px;
@@ -70,13 +71,13 @@
 
 .btn button:hover,
 .btn_actu button:hover,
+.btn_perm_sol button:hover,
 #regre:hover{
   background-color: #c1bdbd;
 }
 
 #crear {
   color: #2CBA7A;
-  flex: none;
 }
 
 #crear:hover {
