@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Menu from "./../components/menu/menu.jsx";
 import Header from "./../components/header/Header_home.jsx";
 import Footer from "./../components/footer/Footer.jsx";
-import Cont_home from "./Jefe/Permisos_emp/cont_perm_emp.jsx";
+import Cont_home from "./Empleado/home/cont_home.jsx";
 import './Home.css';
 import Calendarp from '../components/components_calendar/Calendarp.jsx';
 import Cont_permisos from './Empleado/permisos/cont_permisos.jsx';
