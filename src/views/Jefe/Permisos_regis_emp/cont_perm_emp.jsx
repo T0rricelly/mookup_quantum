@@ -1,4 +1,4 @@
-import './permisos_regis.css'
+import './perm_regis_emp.css'
 import { Link } from 'react-router-dom'
 import hoja from '../../../assets/icons/file-text.svg'
 import basurita from '../../../assets/icons/trash-2.svg'

@@ -34,16 +34,16 @@ export const Menu = () => {
           </Link>
           <Link to="/home/assistance" className="block_link">
             <img src={Cal} alt="Calendario" />
-            <span>Calendario</span>
+            <span>Asistencia</span>
           </Link>
-          <Link to="/home/contrato" className="block_link">
+          <Link to="/home/contrat" className="block_link">
             <img src={Contrat} alt="Contrato" />
             <span>Contrato</span>
           </Link>
         </div>
         <div className="block_down">
 
-          <Link to="/home/employe" className='block_link'>
+          <Link to="/home/tyc" className='block_link'>
             <img src={Help} alt="Empleado" />
             <span>Terminos y condiciones </span>
           </Link>

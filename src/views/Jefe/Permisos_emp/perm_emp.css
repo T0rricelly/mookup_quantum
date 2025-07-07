@@ -1,0 +1,69 @@
+.cont_sol_perm {
+    padding: 20px;
+    margin: auto;
+}
+
+.titulo_permiso_sol {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla_perm_sol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.select_est {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 50%;
+}
+td {
+    padding: 10px;
+}
+
+#btn_aceptar {
+    color: #2CBA7A;
+}
+
+#btn_aceptar:hover {
+    color: #ffffff;
+    background-color: #2CBA7A;
+}
+
+.input_perm_sol,
+.select_perm_sol {
+    width: 100%;
+    padding: 8px;
+    background-color: #f5faf7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn_perm_sol{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    direction: rtl;
+}
+@media (max-width: 1000px) {
+  .btn_perm_sol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:700px) {
+  .btn_perm_sol {
+    grid-template-columns: 1fr;
+  }
+  .select_est{
+    width: 100%;
+  }
+  .tabla_perm_sol  {
+    grid-template-columns: 1fr;
+  }
+}
