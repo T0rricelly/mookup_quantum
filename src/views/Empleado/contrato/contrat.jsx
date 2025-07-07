@@ -1,11 +1,8 @@
-import Menu from "../../../components/menu/menu";
 import "./contrat.css";
 
 const Contrato = () => {
   return (
     <>
-      <section className="contenedor">
-        <Menu />
         <div className="container-contrato">
           <div className="campo-item">
             <label className="campo-label">SALARIO</label>
@@ -50,7 +47,6 @@ const Contrato = () => {
             <input className="campo-editor"></input>
           </div>
         </div>
-      </section>
     </>
   );
 };

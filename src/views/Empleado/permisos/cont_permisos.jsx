@@ -4,9 +4,7 @@ import Menu from '../../../components/menu/menu';
 const Permisos = () => {
   return (
     <>
-      <section className="contenedor">
 
-        <Menu />
         <section className="cont_permisos">
           <h2>PERMISOS</h2>
 
@@ -53,7 +51,6 @@ const Permisos = () => {
             </Link>
           </nav>
         </section>
-      </section>
     </>
   );
 };
