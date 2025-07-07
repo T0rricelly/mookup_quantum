@@ -1,6 +1,5 @@
 
 import { Routes, Route } from "react-router-dom";
-import Menu from "./../components/menu/menu.jsx";
 import Header from "./../components/header/Header_home.jsx";
 import Footer from "./../components/footer/Footer.jsx";
 import Cont_home from "./Empleado/home/cont_home.jsx";
@@ -14,19 +13,13 @@ import Employe from './Jefe/Empleados/Employe.jsx';
 import Contrato  from './Empleado/contrato/contrat.jsx';
 import Contratoj from './Jefe/contratoj/contratoJefe.jsx';
 
-export const Home = () => {
+export const Home = ({ userRol }) => {
   return (
     <>
-      <Header />
-      {/* <div className="contenedor"> */}
-        {/*
-        <aside className="MENU">
-          <Menu />
-        </aside>
-        */}
+      <Header userRol = {userRol}/>
         <main className="CONTENIDO">
           <Routes>
-            <Route index element={<Cont_home />} />
+            <Route index element={<Cont_home/>} />
             <Route path="permisos" element={<Cont_permisos />} />
             <Route path="permisos/actu" element={<Cont_permisos_actu />} />
             <Route path="permisos/regis" element={<Cont_permisos_regis/>} />
@@ -37,7 +30,6 @@ export const Home = () => {
             <Route path="contratoJefe" element={<Contratoj />} />
           </Routes>
         </main>
-      {/* </div> */}
       <Footer />
     </>
   );

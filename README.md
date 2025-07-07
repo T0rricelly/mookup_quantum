@@ -17,6 +17,7 @@
   - npm install react-hook-form
   - npm install react-toastify
   - npm react-router-dom
+  - npm install react-select
   Levantar el servidor
   - npm run dev
 ```

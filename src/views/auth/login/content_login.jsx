@@ -2,8 +2,9 @@ import './content_login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
-import Hidden from './../../../../assets/icons/hidden.svg'
-import Show from './../../../../assets/icons/show.svg'
+import Hidden from './../../../assets/icons/hidden.svg'
+import Show from './../../../assets/icons/show.svg'
+import Select from 'react-select';
 
 const idCardTest = '1031650532';
 const passwordTest = '1234567890';
@@ -13,20 +14,43 @@ export const Content_Login = () => {
   const [idCard, setidCard] = useState('');
   const [password, setPassword] = useState('');
   const [showPass, setShowPass] = useState(false)
+  const [rol, setRol] = useState(null);
 
+  const handleData = (event) => {
+    setRol(event.value);
+    // console.log(e.value)
+    // const data = {
+    //   id: '1',
+    //   nombre: 'Felipe',
+    //   rol: e.value,
+    // }
+    // return data;
+  }
   const handleIdCard = (e) => {
     setidCard(e.target.value);
+
   }
   const handlePassword = (e) => {
     setPassword(e.target.value);
   }
 
+  const roles = [
+    { label: 'Empleado', value: 'Empleado' },
+    { label: 'Jefe', value: 'Jefe' }
+  ]
+
   const submit = (e) => {
     e.preventDefault();
+    if (!rol){
+      emptyCamps();
+      return;
+    }
     if (idCard === idCardTest && password === passwordTest) {
       localStorage.setItem('logged', 'true');
+      localStorage.setItem('rol', rol);
       window.location.href = '/home';
-    } else if (idCard === '' || password === '') {
+
+    } else if (idCard === '' || password === '' ) {
       emptyCamps();
     } else {
       errorData();
@@ -59,9 +83,14 @@ export const Content_Login = () => {
 
   return (
     <>
+
       <main className='container'>
-        <h2 className='container__title'>Login</h2>
-        <form action="" className='container__form' onSubmit={submit}>
+        <div className="back_part">
+          <div className="gray"></div>
+          <div className="white"></div>
+        </div>
+        <form action="" className='container__form'>
+          <h2 className='container__title'>Login</h2>
           <label htmlFor="id_card" className='container__label'>Numero de documento</label>
           <input
             type="text"
@@ -88,8 +117,18 @@ export const Content_Login = () => {
                 onClick={() => {
                   setShowPass(!showPass)
                 }} />}
-
           </div>
+          <Select
+            className='container__select'
+            options={roles}
+            placeholder='Seleccione su rol'
+            value={
+              rol ?
+                { label: rol, value: rol }
+                : null}
+            onChange={handleData}
+          />
+
           <button
             type='submit'
             onClick={submit}
