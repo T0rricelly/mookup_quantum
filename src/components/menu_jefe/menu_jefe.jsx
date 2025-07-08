@@ -45,7 +45,7 @@ export const Menu_Jefe = () => {
         <div className="block_down">
 
           <Link to="/home_jefe/employe_jefe" className="block_link">
-            <img src={employee} alt="Contrato" />
+            <img src={employee} alt="employe" />
             <span>Empleado</span>
           </Link>
 

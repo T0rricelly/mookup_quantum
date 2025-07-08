@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import Header from "./../components/header/Header_home.jsx";
 import Footer from "./../components/footer/Footer.jsx";
@@ -12,30 +11,47 @@ import Cont_permisos_regis from './Empleado/permisos_regis/cont_permi_regis.jsx'
 import Contrato from './Empleado/contrato/contrat.jsx';
 import Contratoj from './Jefe/contratoj/ContratoJefe.jsx';
 import AsistenciaJefe from './Jefe/AsistenciaJefe/AsistenciaJefe.jsx';
-import BuscarEmpEL from "./Jefe/Eliminar_empleado_buscador/Buscar_Emp_Eliminar.jsx";
+import Formulario from "./Jefe/formulario_JEFE/Formulario_JEFE.jsx";
 import Menu from "../components/menu/menu.jsx";
 import Menu_Jefe from "../components/menu_jefe/menu_jefe.jsx";
-import { Tyc } from "./Empleado/tyc/tyc.jsx";
+import Cont_homejefe from "./Jefe/home/cont_homej.jsx";
+import Cont_permisosjefe from "./Jefe/Permisos_emp/cont_perm_emp.jsx";
+import Cont_permisos_regisjefe from "./Jefe/Permisos_regis_emp/cont_perm_regis_emp.jsx";
+import Formulario_jefe from "./Jefe/formulario_JEFE.jsx";
+import Contratojefe from "./Jefe/contratoj/ContratoJefe.jsx";
+import AsistenciaJefe from "./Jefe/AsistenciaJefe/AsistenciaJefe.jsx";
+import Formulario_empjefe from "./Jefe/Admin_Empleado/Employe.jsx";
 
 export const Home = ({ userRol }) => {
   return (
     <>
       <Header userRol={userRol} />
       <section className="contenedor">
-      <Menu />
+        <Menu />
         <main className="CONTENIDO">
           <Routes>
-            <Route index element={<Cont_home userRol = {localStorage.getItem('rol')}/>} />
-            <Route path="permisos" element={<Cont_permisos />} />
-            <Route path="permisos/actu" element={<Cont_permisos_actu />} />
-            <Route path="permisos/regis" element={<Cont_permisos_regis />} />
+            <Route
+              index
+              element={<Cont_home userRol={localStorage.getItem("rol")} />}
+            />
+            <Route path="permisos">
+              <Route index element={<Cont_permisos />} />
+              <Route path="actu" element={<Cont_permisos_actu />} />
+              <Route path="regis" element={<Cont_permisos_regis />} />
+            </Route>
             <Route path="assistance" element={<AsistenciaEm />} />
             <Route path="cuenta" element={<BuscarEmpEL />} />
             <Route path="contrat" element={<Contrato />} />
-            <Route path="tyc" element={<Tyc/>} />
-            {/* <Route path="contratoJefe" element={<Contratoj />} />
-            <Route path="assistancejef" element={<AsistenciaJefe />} />
-            <Route path="employejefe" element={<Formulario />}></Route> */}
+            <Route path="tyc" element={<Tyc />} />
+            <Route path="homejefe" element={<Cont_homejefe />} />
+            <Route path="permisosjefe">
+              <Route index element={<Cont_permisosjefe />} />
+              <Route path="regis" element={<Cont_permisos_regisjefe />} />
+            </Route>
+            <Route path="assistancejefe" element={<AsistenciaJefe />} />
+            <Route path="contratojefe" element={<Contratojefe />} />
+            <Route path="employejefe" element={<Formulario_empjefe />} />
+            <Route path="jefe" element={<Formulario_jefe />} />
           </Routes>
         </main>
       </section>

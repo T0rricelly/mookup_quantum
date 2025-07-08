@@ -6,8 +6,6 @@ import "./AsistenciaJefe.css";
 
 export const AsistenciaJefe = () => {
   return (
-    <div className="contenedor">
-      <Menu />
 
       <main className="main-content">
         {/* Primer bloque */}
@@ -46,7 +44,6 @@ export const AsistenciaJefe = () => {
         
         </div>
       </main>
-    </div>
   );
 };
 
