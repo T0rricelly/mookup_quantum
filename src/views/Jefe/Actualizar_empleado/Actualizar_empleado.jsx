@@ -15,7 +15,7 @@ export const Formulario = () => {
           
             <section className='Contenedor_Principal'>
                 <header className='encabezado'>
-                    <h1 className="titulo_principal">Añadir empleado</h1>
+                    <h1 className="titulo_principal">Actualizar empleado</h1>
                 </header>
 
                 <section className="Contenedor_Formulario">
@@ -87,6 +87,14 @@ export const Formulario = () => {
                             <input id = "grupo_sanguineo" className='inputs' type="text" placeholder="" {...register(" GRUPO SANGUINEO ")} />
                         </div>
 
+                        <div className='cont_input'>
+                            <label htmlFor = "email" className='sub_titulos'> EMAIL: </label>
+                            <input id = "email" className='inputs' type="email" placeholder="" {...register(" EMAIL ")} />
+                        </div>
+
+                        <div>
+
+                        </div>
 
                         <h1 className="TITULO_2"> DATOS DE CONTRATO </h1>
 
@@ -129,8 +137,9 @@ export const Formulario = () => {
                             <input id = "estado_contrato" className='inputs' type="text" placeholder="" {...register(" ESTADO CONTRATO ")} />
                         </div>
 
-                        <div>
-                            
+                        <div className='cont_input'>
+                            <label htmlFor = "cargo" className='sub_titulos'> CARGO: </label>
+                            <input id = "cargo" className='inputs' type="text" placeholder="" {...register(" CARGO ")} />  
                         </div>
 
                         <h1 className="TITULO_2"> CONTACTO EMERGENCIA </h1>
@@ -176,10 +185,11 @@ export const Formulario = () => {
                         <div className='boton_cancelar'>
                             <h1 className='texto_boton_cancelar'> Cancelar </h1>
                         </div>
-                    </Link>
-                    <div className='boton_anadir'>
-                        <h1 className='texto_boton_anadir'> Añadir </h1>
+                        </Link>
+                    <div className='boton_actu'>
+                        <h1 className='texto_boton_actualizar'> Actualizar </h1>
                     </div>
+
                 </div>
             </section>
         </>

@@ -12,7 +12,7 @@ import Cont_permisos_regis from './Empleado/permisos_regis/cont_permi_regis.jsx'
 import Contrato from './Empleado/contrato/contrat.jsx';
 import Contratoj from './Jefe/contratoj/ContratoJefe.jsx';
 import AsistenciaJefe from './Jefe/AsistenciaJefe/AsistenciaJefe.jsx';
-import Formulario from "./Jefe/formulario_JEFE/Formulario_JEFE.jsx";
+import BuscarEmpEL from "./Jefe/Eliminar_empleado_buscador/Buscar_Emp_Eliminar.jsx";
 import Menu from "../components/menu/menu.jsx";
 import Menu_Jefe from "../components/menu_jefe/menu_jefe.jsx";
 import { Tyc } from "./Empleado/tyc/tyc.jsx";
@@ -30,7 +30,7 @@ export const Home = ({ userRol }) => {
             <Route path="permisos/actu" element={<Cont_permisos_actu />} />
             <Route path="permisos/regis" element={<Cont_permisos_regis />} />
             <Route path="assistance" element={<AsistenciaEm />} />
-            <Route path="cuenta" element={<Formulario />} />
+            <Route path="cuenta" element={<BuscarEmpEL />} />
             <Route path="contrat" element={<Contrato />} />
             <Route path="tyc" element={<Tyc/>} />
             {/* <Route path="contratoJefe" element={<Contratoj />} />
