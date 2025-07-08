@@ -8,6 +8,7 @@ import hidden from './../../../assets/icons/hidden.svg'
 
 export const Restore = () => {
     const codeTest = '3124';
+
     const [code, setCode] = useState('');
 
     const handleCode = (e) => {
