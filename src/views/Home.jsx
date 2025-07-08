@@ -25,7 +25,7 @@ export const Home = ({ userRol }) => {
       <Menu />
         <main className="CONTENIDO">
           <Routes>
-            <Route index element={<Cont_home />} />
+            <Route index element={<Cont_home userRol = {localStorage.getItem('rol')}/>} />
             <Route path="permisos" element={<Cont_permisos />} />
             <Route path="permisos/actu" element={<Cont_permisos_actu />} />
             <Route path="permisos/regis" element={<Cont_permisos_regis />} />
