@@ -1,6 +1,8 @@
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useState } from 'react'
+import './new.css'
+import quantum from './../../../assets/images/quantum_logo.png'
 
 export const New = () => {
   const [password, setPassword] = useState('')
@@ -16,9 +18,9 @@ export const New = () => {
     e.preventDefault(e)
     if (newPassword === '') {
       emptyCamps()
-    }else if ( password === newPassword){
+    } else if (password === newPassword) {
       window.location.href = '/login'
-    }else{
+    } else {
       errorData()
     }
   }
@@ -49,31 +51,41 @@ export const New = () => {
   return (
     <>
       <main className='container'>
-        <h2 className='container__title'>Nueva Contraseña</h2>
+        <section className="back_part">
+          <div className="gray"></div>
+          <div className="white"></div>
+        </section>
         <form action="POST" className='container__form'>
-          <label htmlFor="id_card" className='container__label'>Digite su nueva contraseña</label>
-          <input
-            type="text"
-            className='container__input'
-            placeholder='Ingrese su nueva contraseña'
-            name='id_card'
-            onChange={handlePassword}
-          />
-          <label htmlFor="password" className='container__label'>Confirme su contraseña</label>
-          <input
-            type="text"
-            className='container__input'
-            placeholder='Confirme su contraseña'
-            name='password'
-            onChange={handleNewPassword}
-          />
-          <button
-            type='submit'
-            className='container__submit'
-            onClick={submit}
-          >
-            Confirmar
-          </button>
+          <nav className="container__image_new">
+            <img src={quantum} className='container__img' alt="Quantum" />
+          </nav>
+          <section className="form_new">
+
+            <h2 className='container__title'>Nueva Contraseña</h2>
+            <label htmlFor="id_card" className='container__label'>Digite su nueva contraseña</label>
+            <input
+              type="text"
+              className='container__input'
+              placeholder='Ingrese su nueva contraseña'
+              name='id_card'
+              onChange={handlePassword}
+            />
+            <label htmlFor="password" className='container__label'>Confirme su contraseña</label>
+            <input
+              type="text"
+              className='container__input'
+              placeholder='Confirme su contraseña'
+              name='password'
+              onChange={handleNewPassword}
+            />
+            <button
+              type='submit'
+              className='container__submit'
+              onClick={submit}
+            >
+              Confirmar
+            </button>
+          </section>
         </form>
       </main>
       <ToastContainer

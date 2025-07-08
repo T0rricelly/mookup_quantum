@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Navigate } from 'react-router-dom';
 import { New } from './views/auth/new/New';
 import { Content_Login } from './views/auth/login/content_login';
 import { Forgot_Pasword } from './views/auth/forgot/Forgot_Pasword';
-import { Restore } from './views/auth/new/Restore';
+import { Restore } from './views/auth/restore/Restore';
 import { Home } from './views/Home';
 import './main.css'
 import { Protected_Routes } from './components/Protected_Routes/Protected_Routes';
