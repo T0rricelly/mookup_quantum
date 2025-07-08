@@ -14,6 +14,8 @@ import Contratoj from './Jefe/contratoj/ContratoJefe.jsx';
 import AsistenciaJefe from './Jefe/AsistenciaJefe/AsistenciaJefe.jsx';
 import Formulario from "./Jefe/formulario_JEFE/Formulario_JEFE.jsx";
 import Menu from "../components/menu/menu.jsx";
+import Menu_Jefe from "../components/menu_jefe/menu_jefe.jsx";
+import { Tyc } from "./Empleado/tyc/tyc.jsx";
 
 export const Home = ({ userRol }) => {
   return (
@@ -30,9 +32,10 @@ export const Home = ({ userRol }) => {
             <Route path="assistance" element={<AsistenciaEm />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="contrat" element={<Contrato />} />
-            <Route path="contratoJefe" element={<Contratoj />} />
+            <Route path="tyc" element={<Tyc/>} />
+            {/* <Route path="contratoJefe" element={<Contratoj />} />
             <Route path="assistancejef" element={<AsistenciaJefe />} />
-            <Route path="employejefe" element={<Formulario />}></Route>
+            <Route path="employejefe" element={<Formulario />}></Route> */}
           </Routes>
         </main>
       </section>
