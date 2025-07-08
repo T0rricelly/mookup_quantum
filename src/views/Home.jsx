@@ -11,7 +11,7 @@ import Cont_permisos_regis from './Empleado/permisos_regis/cont_permi_regis.jsx'
 import Contrato from './Empleado/contrato/contrat.jsx';
 import Contratoj from './Jefe/contratoj/ContratoJefe.jsx';
 import AsistenciaJefe from './Jefe/AsistenciaJefe/AsistenciaJefe.jsx';
-import Formulario from "./Jefe/formulario_JEFE/Formulario_JEFE.jsx";
+import Formulario from "./Jefe/Cuenta/Cuenta_JEFE.jsx";
 import Menu from "../components/menu/menu.jsx";
 import Menu_Jefe from "../components/menu_jefe/menu_jefe.jsx";
 import Cont_homejefe from "./Jefe/home/cont_homej.jsx";
@@ -19,8 +19,11 @@ import Cont_permisosjefe from "./Jefe/Permisos_emp/cont_perm_emp.jsx";
 import Cont_permisos_regisjefe from "./Jefe/Permisos_regis_emp/cont_perm_regis_emp.jsx";
 import Formulario_jefe from "./Jefe/formulario_JEFE.jsx";
 import Contratojefe from "./Jefe/contratoj/ContratoJefe.jsx";
-import AsistenciaJefe from "./Jefe/AsistenciaJefe/AsistenciaJefe.jsx";
 import Formulario_empjefe from "./Jefe/Admin_Empleado/Employe.jsx";
+import Form_anadir_emp from './Jefe/Anadir_Empleado/Anadir_empleado.jsx';
+import Form_elim_emp from './Jefe/Eliminar_Empleado/Eliminar_empleado.jsx'
+import Form_busc_emp from './Jefe/Buscar_Empleado/Buscar_E.jsx'
+import Form_actu_emp from './Jefe/Actualizar_empleado/Actualizar_empleado.jsx'
 
 export const Home = ({ userRol }) => {
   return (
@@ -50,7 +53,13 @@ export const Home = ({ userRol }) => {
             </Route>
             <Route path="assistancejefe" element={<AsistenciaJefe />} />
             <Route path="contratojefe" element={<Contratojefe />} />
-            <Route path="employejefe" element={<Formulario_empjefe />} />
+            <Route path="employejefe" >
+              <Route index element={<Formulario_empjefe />} />
+              <Route path="anadir" element={<Form_anadir_emp/>}/>
+              <Route path="eliminar" element={<Form_elim_emp/>}/>
+              <Route path="buscar" element={<Form_busc_emp/>}/>
+              <Route path="actu" element={<Form_actu_emp/>}/>
+            </Route>
             <Route path="jefe" element={<Formulario_jefe />} />
           </Routes>
         </main>

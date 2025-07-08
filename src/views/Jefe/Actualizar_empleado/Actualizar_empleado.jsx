@@ -181,7 +181,7 @@ export const Formulario = () => {
                     </form>
                 </section>
                 <div className='Contenedor_Botones'>
-                    <Link to="/home/employe">
+                    <Link to="/home/employejefe">
                         <div className='boton_cancelar'>
                             <h1 className='texto_boton_cancelar'> Cancelar </h1>
                         </div>
