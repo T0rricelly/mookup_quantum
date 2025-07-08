@@ -1,17 +1,127 @@
-*{
+* {
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#root{
+
+#root {
     position: relative;  
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
-.container{
+
+.container {
     display: flex;  
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container__form {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 600px;
+    height: auto;
+    border: 2px solid #000;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     height: 100%;
+    margin: 7% auto;
+    padding: 20px;
+}
+
+.container__image {
+    display: block;
+    width: 40%;
+    height: auto;
+}
+
+.container__img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 50px auto;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container__form {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .form {
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .container__image {
+        width: 100%;
+        order: -1; /* Mueve la imagen arriba en móviles */
+    }
+
+    .container__img {
+        margin: 30px auto;
+    }
+
+    .container__title {
+        font-size: 28px;
+        margin: 0 0 30px 0;
+    }
+
+    .container__label,
+    .container__input,
+    .container__submit,
+    .container__select {
+        width: 100%;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container__form {
+        width: 100%;
+    }
+
+    .container__title {
+        font-size: 24px;
+        margin: 0 0 20px 0;
+    }
+
+    .container__img {
+        margin: 20px auto;
+    }
+}
+
+/* Media query para altura */
+@media screen and (max-height: 700px) {
+    .container__form {
+        margin: 10px 0;
+    }
+
+    .form {
+        margin: 3% auto;
+    }
+
+    .container__title {
+        margin: 0 0 20px 0;
+    }
 }
 .back_part{
     width: 100%;
@@ -121,8 +231,3 @@
 
 
 
-@media screen and (max-width: 1000px) {
-    /* .container{
-        width: 80%;
-    } */
-} 
