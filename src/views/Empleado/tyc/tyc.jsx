@@ -6,7 +6,8 @@ export const Tyc = () => {
             <section className="contain">
 
                 <h1>Términos y Condiciones para el Tratamiento de Datos Personales</h1>
-
+                <hr />
+                <br />
                 <h2>1. Responsable del tratamiento de los datos personales</h2>
                 <p>El responsable del tratamiento de los datos personales es <strong>Quantum</strong>, correo electrónico de contacto: <a href="mailto:20quantum24@gmail.com">20quantum24@gmail.com</a>.</p>
 

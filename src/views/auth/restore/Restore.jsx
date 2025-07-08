@@ -1,10 +1,14 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
+import './restore.css';
+import quantum from './../../../assets/images/quantum_logo.png';
+import hidden from './../../../assets/icons/hidden.svg'
 
-const codeTest = '2996234';
 
 export const Restore = () => {
+    const codeTest = '3124';
+
     const [code, setCode] = useState('');
 
     const handleCode = (e) => {
@@ -19,9 +23,6 @@ export const Restore = () => {
         } else {
             errorData();
         }
-    }
-    const cancel = () => {
-        window.location.href = '/forgot';
     }
     const error = () => {
         toast.error('Por favor llena los campos vacios', {
@@ -49,24 +50,51 @@ export const Restore = () => {
     }
     return (
         <>
-            <h2 className="main__title">Restablecer contraseña</h2>
-            <main className="main">
-                <form action="post" className="main__form">
-                    <label htmlFor="code" className="main__label">Ingrese el codigo para restaurar su nueva contraseña</label>
-                    <input
-                        type="text"
-                        name='code'
-                        className='main__input'
-                        placeholder='Ingrese el codigo'
-                        onChange={handleCode}
-                        required />
+            <main className="container">
+                <section className="back_part">
+                    <div className="gray"></div>
+                    <div className="white"></div>
+                </section>
+                <form action="post" className="container__form">
+                    <nav className="container__image">
+                        <img src={quantum} className='container__img' alt="Quantum" />
+                    </nav>
+                    <section className="form">
+                        <img src={hidden} alt="" className='form__hidden'/>
+                        <h2 className="container__title">Restablecer contraseña</h2>
+                        <label htmlFor="code" className="container__label_restore">Ingrese el codigo para crear su nueva contraseña</label>
+                        <section className="container__inputs">
+
+                            <input
+                                type="text"
+                                name='code'
+                                maxLength={1}
+                                className='container__input_restore'
+                                onChange={handleCode}
+                                required />
+                            <input
+                                type="text"
+                                name='code'
+                                className='container__input_restore'
+                                onChange={handleCode}
+                                required />
+                            <input
+                                type="text"
+                                name='code'
+                                className='container__input_restore'
+                                onChange={handleCode}
+                                required />
+                            <input
+                                type="text"
+                                name='code'
+                                className='container__input_restore'
+                                onChange={handleCode}
+                                required />
+                        </section>
+                        <button type='submit' onClick={next} className="container__btnNext_restore">Enviar</button>
+                    </section>
                 </form>
-                <p className="main__indications">
-                    Revise el codigo que le enviamos a su correo electronico.
-                </p>
-                <button type='submit' onClick={cancel} className="main__btnCancel">Cancelar</button>
-                <button type='submit' onClick={next} className="main__btnNext">Siguiente</button>
-            </main>
+            </main >
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
