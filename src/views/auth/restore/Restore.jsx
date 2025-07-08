@@ -5,9 +5,9 @@ import './restore.css';
 import quantum from './../../../assets/images/quantum_logo.png';
 import hidden from './../../../assets/icons/hidden.svg'
 
-const codeTest = '2996234';
 
 export const Restore = () => {
+    const codeTest = '3124';
     const [code, setCode] = useState('');
 
     const handleCode = (e) => {
@@ -67,6 +67,7 @@ export const Restore = () => {
                             <input
                                 type="text"
                                 name='code'
+                                maxLength={1}
                                 className='container__input_restore'
                                 onChange={handleCode}
                                 required />
