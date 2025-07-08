@@ -1,13 +1,13 @@
-import './Menu.css';
+import './menu_jefe.css';
 import { Link } from 'react-router-dom';
 import Dash from './../../assets/icons/dashboard.svg';
 import Check from './../../assets/icons/check.svg';
 import Cal from './../../assets/icons/assistance.svg';
 import Contrat from './../../assets/icons/contrat.svg';
-import Help from './../../assets/icons/help.svg';
 import Logout from './../../assets/icons/logout.svg';
+import employee from './../../assets/icons/employee.svg';
 
-export const Menu = () => {
+export const Menu_Jefe = () => {
   const name = "Sena"
   const logOut = () => {
     window.location.href = '/login';
@@ -24,28 +24,29 @@ export const Menu = () => {
         </section>
 
 
-          <Link to="/home" className="block_link">
+          <Link to="/home_jefe" className="block_link">
             <img src={Dash} alt="Dashboard" />
             <span>Dashboard</span>
           </Link>
-          <Link to="/home/permisos" className="block_link">
+          <Link to="/home_jefe/permisos_jefe" className="block_link">
             <img src={Check} alt="Permisos" />
             <span>Permisos</span>
           </Link>
-          <Link to="/home/assistance" className="block_link">
+          <Link to="/home_jefe/assistance_jefe" className="block_link">
             <img src={Cal} alt="Calendario" />
             <span>Asistencia</span>
           </Link>
-          <Link to="/home/contrat" className="block_link">
+          <Link to="/home_jefe/contrat_jefe" className="block_link">
             <img src={Contrat} alt="Contrato" />
             <span>Contrato</span>
           </Link>
+          
         </div>
         <div className="block_down">
 
-          <Link to="/home/tyc" className='block_link'>
-            <img src={Help} alt="Empleado" />
-            <span>Terminos y condiciones </span>
+          <Link to="/home_jefe/employe_jefe" className="block_link">
+            <img src={employee} alt="Contrato" />
+            <span>Empleado</span>
           </Link>
 
 
@@ -60,4 +61,4 @@ export const Menu = () => {
   );
 };
 
-export default Menu;
+export default Menu_Jefe;
