@@ -92,7 +92,7 @@ export const Content_Login = () => {
           <div className="white"></div>
         </section>
 
-        <form action="" className='container__form'>
+        <form action="post" className='container__form'>
           <nav className="container__image">
             <img src={quantum} className='container__img' alt="Quantum" />
           </nav>

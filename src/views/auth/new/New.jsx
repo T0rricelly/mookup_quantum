@@ -52,13 +52,10 @@ export const New = () => {
     <>
       <main className='container'>
         <section className="back_part">
-          <div className="gray"></div>
           <div className="white"></div>
+          <div className="gray"></div>
         </section>
         <form action="POST" className='container__form'>
-          <nav className="container__image_new">
-            <img src={quantum} className='container__img' alt="Quantum" />
-          </nav>
           <section className="form_new">
 
             <h2 className='container__title'>Nueva Contraseña</h2>
@@ -86,6 +83,9 @@ export const New = () => {
               Confirmar
             </button>
           </section>
+          <nav className="container__image_new">
+            <img src={quantum} className='container__img' alt="Quantum" />
+          </nav>
         </form>
       </main>
       <ToastContainer

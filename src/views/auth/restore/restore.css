@@ -1,0 +1,33 @@
+.container__inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container__input_restore{
+    margin: 25px auto 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+}
+.form{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 9% auto;
+}
+.form__hidden{
+    width: 90px;
+    height: 90px;
+}
+.container__btnNext_restore{
+   display: block;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4) ;
+    font-size: 25px;
+}
+.container__label_restore{
+    font-size: 30px;
+}
