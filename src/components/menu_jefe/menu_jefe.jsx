@@ -24,19 +24,19 @@ export const Menu_Jefe = () => {
         </section>
 
 
-          <Link to="/home_jefe" className="block_link">
+          <Link to="/homejefe" className="block_link">
             <img src={Dash} alt="Dashboard" />
             <span>Dashboard</span>
           </Link>
-          <Link to="/home_jefe/permisos_jefe" className="block_link">
+          <Link to="/permisosjefe" className="block_link">
             <img src={Check} alt="Permisos" />
             <span>Permisos</span>
           </Link>
-          <Link to="/home_jefe/assistance_jefe" className="block_link">
+          <Link to="/assistancejefe" className="block_link">
             <img src={Cal} alt="Calendario" />
             <span>Asistencia</span>
           </Link>
-          <Link to="/home_jefe/contrat_jefe" className="block_link">
+          <Link to="/contratjefe" className="block_link">
             <img src={Contrat} alt="Contrato" />
             <span>Contrato</span>
           </Link>
@@ -44,7 +44,7 @@ export const Menu_Jefe = () => {
         </div>
         <div className="block_down">
 
-          <Link to="/home_jefe/employe_jefe" className="block_link">
+          <Link to="/employejefe" className="block_link">
             <img src={employee} alt="employe" />
             <span>Empleado</span>
           </Link>

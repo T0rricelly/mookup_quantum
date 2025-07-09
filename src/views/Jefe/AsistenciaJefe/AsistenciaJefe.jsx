@@ -3,10 +3,12 @@ import Menu from '../../../components/menu/menu';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import "./AsistenciaJefe.css";
+import Menu_Jefe from '../../../components/menu_jefe/menu_jefe';
 
 export const AsistenciaJefe = () => {
   return (
-
+    <>
+    {/*<Menu_Jefe/>*/}
       <main className="main-content">
         {/* Primer bloque */}
         <div className='contenedor1_jef'>
@@ -44,6 +46,7 @@ export const AsistenciaJefe = () => {
         
         </div>
       </main>
+      </>
   );
 };
 

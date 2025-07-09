@@ -4,7 +4,7 @@ a {
 }
 .cont_home {
   display: grid;
-  grid-template-columns: 20% 75%;
+  grid-template-columns: 20% 70%;
   gap: 15px;
   padding: 10px;
   align-items: start;
@@ -64,7 +64,7 @@ a {
   background-color: #C2EBE3;
 }
 /*Bases*/
-.tmp_tra,.asis,.permi,.ausencias,.emp,.historial{
+.perm_regis_jefe,.asis,.permi_emp,.ausencias_emp,.emp,.historial{
   border-radius: 1em;
   background-color: #EFEFEF;
   border: solid 1px;
@@ -85,17 +85,17 @@ a {
   padding: 10px;
 }
 /*Medio*/
-.tmp_tra{
+.perm_regis_jefe{
   height: 266px;
 }
 .asis{
   height: 241px;
 }
-.permi{
+.permi_emp{
   height: 543px;
 }
 /*Derecha*/
-.ausencias{
+.ausencias_emp{
   height:241px;
 }
 .emp{

@@ -33,8 +33,8 @@ export const Cont_homej = () => {
   }, []);
   return (
     <>
-      <section className="contenedor">
-        <Menu_Jefe/>
+      {/*<section className="contenedor">
+        <Menu_Jefe />*/}
         <section className="cont_home">
           <section className="asides">
             <aside className="saludo">
@@ -62,13 +62,13 @@ export const Cont_homej = () => {
             </article>
             <section className="sub_mid">
               <section className="sub_mid_left">
-                <Link to="/home_jefe/assistance_jefe">
+                <Link to="assistancejefe">
                   <article className="asis">
                     <h3 className="titulos">Asistencia Empleados</h3>
                   </article>
                 </Link>
 
-                <Link to="/home_jefe/permisos_jefe">
+                <Link to="permisosjefe">
                   <article className="permi_emp">
                     <h3 className="titulos">Solicitudes Permisos</h3>
                   </article>
@@ -79,25 +79,22 @@ export const Cont_homej = () => {
                 <article className="ausencias_emp">
                   <h3 className="titulos">Ausencias Empleados</h3>
                 </article>
-                <Link to="/home_jefe/empleados_jefe">
+                <Link to="employejefe">
                   <article className="emp">
                     <h3 className="titulos">Empleados</h3>
                   </article>
                 </Link>
-                  <Link to="/home_jefe/employe_jefe">
-                    <article className="contrato">
-                      <h3 className="titulos">Contratos</h3>
-                    </article>
-                  </Link>
-                  <article className="tmp_tra">
-                    <h3 className="titulos">Tiempo Trabajado</h3>
+                <Link to="permisosjefe/regis">
+                  <article className="perm_regis_jefe">
+                    <h3 className="titulos">Permisos Registrados</h3>
                   </article>
+                </Link>
               </section>
 
             </section>
           </section>
         </section>
-      </section >
+     {/*</section >*/}
     </>
   );
 };
