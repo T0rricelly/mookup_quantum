@@ -1,5 +1,4 @@
-import React from 'react'
-import './tyc.css'
+import "./tyc.css"
 export const Tyc = () => {
     return (
         <>
@@ -55,5 +54,7 @@ export const Tyc = () => {
                 <p>La presente política rige a partir de la fecha de su publicación y los datos personales serán tratados durante el tiempo que sea necesario para cumplir con las finalidades mencionadas, o hasta que el titular solicite su eliminación.</p>
             </section>
         </>
-    )
-}
+    );
+};
+
+export default Tyc;

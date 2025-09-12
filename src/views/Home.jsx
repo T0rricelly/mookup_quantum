@@ -45,7 +45,7 @@ export const Home = ({ userRol }) => {
             <Route path="assistance" element={<AsistenciaEm />} />
             <Route path="cuenta" element={<Formulario />} />
             <Route path="contrat" element={<Contrato />} />
-            <Route path="tyc" element={<Tyc />} />
+              <Route path="tyc" element={<Tyc />} />
             <Route path="homejefe" element={<Cont_homejefe />} />
               <Route path="permisosjefe">
                 <Route index element={<Cont_permisosjefe />} />
