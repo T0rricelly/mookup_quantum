@@ -56,5 +56,4 @@ export const Tyc = () => {
         </>
     );
 };
-
 export default Tyc;
